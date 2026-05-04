@@ -26,10 +26,10 @@ export default function StudioSection() {
       </div>
 
       {/* ── 2. GEOMETRIC SVG OVERLAY ── */}
-      <div className="absolute right-[-5%] top-[-10%] z-[1] pointer-events-none opacity-40 select-none mix-blend-overlay">
+      <div className="absolute right-[-15%] top-[8%] z-[1] pointer-events-none opacity-40 select-none mix-blend-overlay">
         <svg 
-          width="828" 
-          height="938" 
+          width="650" 
+          height="450" 
           viewBox="0 0 828 938" 
           fill="none" 
           xmlns="http://www.w3.org/2000/svg"
@@ -62,7 +62,7 @@ export default function StudioSection() {
           {/* Heading: Hides the hard line break on mobile so it wraps naturally like Figma. 
               (Also fixed your "text-bold" typo to "font-bold"!) */}
          <h2 className="text-[27px] md:text-[40px] text-center md:text-left font-medium tracking-tight leading-[1.1] md:leading-[1.05] text-white mb-6 md:mb-8">
-            See Content Studio
+            See Content Studio    
             <br className="hidden md:block" />
             <span className="md:hidden"> </span>inside Amplitive.
           </h2>
@@ -88,13 +88,6 @@ export default function StudioSection() {
           </div>
 
         </div>
-      </div>
-      
-      {/* Decorative Star Accent */}
-      <div className="absolute bottom-8 right-8 md:bottom-10 md:right-10 z-[5] opacity-60">
-         <svg viewBox="0 0 24 24" fill="white" className="w-[32px] h-[32px] md:w-[24px] md:h-[24px]">
-            <path d="M12 0L14.59 9.41L24 12L14.59 14.59L12 24L9.41 14.59L0 12L9.41 9.41L12 0Z" />
-         </svg>
       </div>
     </div>
   );

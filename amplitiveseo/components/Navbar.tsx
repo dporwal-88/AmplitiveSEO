@@ -39,10 +39,10 @@ export default function Navbar() {
 
         {/* Desktop Buttons */}
         <div className="hidden md:flex items-center gap-4">
-          <button className="text-[14px] text-white/80 hover:text-white transition-colors px-3 py-1.5">
+          <button className="text-[14px] text-white/80 cursor-pointer hover:text-white transition-colors px-3 py-1.5">
             Login
           </button>
-          <button className="text-[14px] font-medium bg-white text-black rounded-md w-[110px] h-[38px] hover:bg-white/90 transition-colors">
+          <button className="text-[14px] font-medium bg-white text-black rounded-md w-[110px] h-[38px] hover:bg-white/90 transition-color cursor-pointer">
             Get Plan
           </button>
         </div>

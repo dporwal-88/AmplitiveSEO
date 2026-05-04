@@ -1,25 +1,26 @@
 "use client";
 import Image from "next/image";
 import colorMix from "../public/colorMix.png";
-import tick from "../public/tick.png";
+// import tick from "../public/tick.png";
+import tick from "../public/moduleIcon.png"
 
 export default function ModuleSection() {
   const improvements = [
     {
-      title: "Faster production cycles",
-      desc: "Reduce the time lost to searching, re-uploading, and re-explaining the same work.",
+      title: "Better execution continuity",
+      desc: "Keep search initiatives moving without losing context between tools.",
     },
     {
-      title: "Cleaner approvals",
-      desc: "Keep production status and asset access easier to manage across the team.",
+      title: "Stronger content coordination",
+      desc: "Tie SEO priorities more directly to content planning and production.",
     },
     {
-      title: "Better launch readiness",
-      desc: "Move assets into campaigns with fewer last-minute handoff issues.",
+      title: "Clearer ownership",
+      desc: "Make it easier to see what needs to be done and who is driving it.",
     },
     {
-      title: "More organized output",
-      desc: "Keep creative work tied to the campaigns and timelines it supports.",
+      title: "More connected optimization",
+      desc: "Keep SEO closer to the reporting and workflow decisions to improve performance.",
     },
   ];
 
@@ -43,10 +44,10 @@ export default function ModuleSection() {
         {/* LEFT DIV: Heading */}
         {/* Added mobile centering and specific line breaks to match Figma */}
         <div className="flex-1 w-full flex justify-center lg:justify-end lg:pr-8">
-          <div className="max-w-[480px] w-full text-center lg:text-left">
-            <h2 className="text-[28px] sm:text-[32px] lg:text-[36px] font-semibold leading-[1.3] lg:leading-[1.1] tracking-tight text-[#01091E]">
-              This works better<br className="hidden lg:block" />
-              <span className="lg:hidden"> </span>because it's part of <br className="block lg:hidden" />
+          <div className="max-w-[520px] w-full text-center lg:text-left">
+            <h2 className="text-[28px] sm:text-[32px] lg:text-[32px] font-semibold leading-[1.3] lg:leading-[1.1] tracking-tight text-[#01091E]">
+              This works better because<br className="hidden lg:block" />
+              <span className="lg:hidden"> </span> it's part of <br className="block lg:hidden" />
               <span className="text-[#1ab87e]">one</span> <span className="text-[#0f72d7]">system</span>
             </h2>
           </div>
@@ -70,11 +71,11 @@ export default function ModuleSection() {
         {/* Centered on mobile, left-aligned on desktop */}
         <div className="flex-1 w-full lg:pl-8 flex justify-center lg:justify-start">
           <div className="max-w-[480px] w-full space-y-4 lg:space-y-6 text-center lg:text-left">
-            <p className="text-[14px] text-[#4b5563] leading-relaxed">
-              Content Studio connects directly to planning, launches, outreach, email, ads, and team workflows.
+            <p className="text-[13px] text-[#4b5563] leading-relaxed">
+              SEO becomes part of the campaign plan, content system, and optimization loop inside Amplitive.
             </p>
-            <p className="text-[14px] text-[#4b5563] leading-relaxed">
-              That means the work created inside the studio does not need to be reassembled later inside another tool before it can be used.
+            <p className="text-[13px] text-[#4b5563] leading-relaxed">
+              That connection helps teams execute search work with less fragmentation between strategy, production, and follow-through.
             </p>
           </div>
         </div>
@@ -117,8 +118,8 @@ export default function ModuleSection() {
                 // ADDED: w-full (Allows it to scale perfectly on all phones)
                 className="bg-white rounded-[20px] p-6 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border w-full min-h-[120px] border-black/[0.03] flex flex-col items-start hover:shadow-lg transition-all duration-300"
               >
-                <div className="w-10 h-10 rounded-lg bg-[#E6F8F1] flex items-center justify-center mb-6">
-                  <Image src={tick} alt="Check" width={20} height={20} />
+                <div className="w-10 h-10 rounded-lg flex items-center justify-center mb-6">
+                  <Image src={tick} alt="Check" width={30} height={30} />
                 </div>
 
                 <h4 className="text-[13px] font-bold mb-3 text-[#0a0f1e]">
