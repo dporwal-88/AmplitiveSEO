@@ -1,8 +1,6 @@
 "use client";
 import Image from "next/image";
 import colorMix from "../public/colorMix.png";
-// import tick from "../public/tick.png";
-import tick from "../public/moduleIcon.png"
 
 export default function ModuleSection() {
   const improvements = [
@@ -119,7 +117,17 @@ export default function ModuleSection() {
                 className="bg-white rounded-[20px] p-6 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border w-full min-h-[120px] border-black/[0.03] flex flex-col items-start hover:shadow-lg transition-all duration-300"
               >
                 <div className="w-10 h-10 rounded-lg flex items-center justify-center mb-6">
-                  <Image src={tick} alt="Check" width={30} height={30} />
+                  <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="42" height="42" rx="5.4" fill="url(#paint0_linear_123_52398)"/>
+                  <path d="M27 15L16 26L11 21" stroke="white" strokeWidth="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M31 19L23.5 26.5L22 25" stroke="white" strokeWidth="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <defs>
+                    <linearGradient id="paint0_linear_123_52398" x1="34.125" y1="-1.81887e-06" x2="5.25" y2="42" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#CCFFD4"/>
+                    <stop offset="1" stop-color="#2EB0D7"/>
+                    </linearGradient>
+                  </defs>
+                  </svg>
                 </div>
 
                 <h4 className="text-[13px] font-bold mb-3 text-[#0a0f1e]">

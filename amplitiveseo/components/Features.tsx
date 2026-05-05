@@ -1,19 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import Image from "next/image";
-
-import healthIcon from "../public/healthIcon.png"
-import seachPink from "../public/searchPink.png"
-import taskIcon from "../public/TaskIcon.png"
-import optimizationIcon from "../public/OptimizationIcon.png"
-import projectIcon from "../public/ProjectIcon.png"
-import guestIcon from "../public/guestIcon.png"
-import guestKey from "../public/guestKey.png"
 
 
 export default function Features() {
-  const [activeTab, setActiveTab] = useState("Image");
 
   return (
     <div
@@ -143,13 +133,16 @@ export default function Features() {
             <div className="absolute rounded-[8px] bg-[#FFF5EE] p-2 pl-4 shadow-[0_15px_40px_rgba(0,0,0,0.4)] z-30" style={{ width: "180px", top: "45px", left: "560px" }}>
               <div className="flex items-center gap-2 mb-1">
                 <div className="w-5 h-5 rounded bg-orange-400 flex items-center justify-center">
-                  {/* <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="3"><polyline points="20 6 9 17 4 12"/></svg> */}
-                  <Image
-                    src={healthIcon}
-                    alt="healthIcon"
-                    width={10}
-                    height={10}
-                  />
+                  <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="21.1445" height="21.1445" rx="3.00475" fill="url(#paint0_linear_123_48980)"/>
+                  <path d="M15.2095 10.5722H13.3547L11.9636 14.7455L9.18142 6.39899L7.79033 10.5722H5.93555" stroke="white" stroke-width="0.927391" stroke-linecap="round" stroke-linejoin="round"/>
+                  <defs>
+                  <linearGradient id="paint0_linear_123_48980" x1="17.1799" y1="-9.15695e-07" x2="2.64306" y2="21.1445" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#FFCC9C"/>
+                  <stop offset="1" stop-color="#FF8853"/>
+                  </linearGradient>
+                  </defs>
+                  </svg>
                 </div>
                 
               </div>
@@ -262,17 +255,25 @@ export default function Features() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-8">
 
 {/* ── CARD 1: Search Visibility Management ── */}
-          <div className="relative rounded-[20px] border border-white/10 bg-[#0B1528]/60 backdrop-blur-md overflow-hidden p-6 lg:p-7 duration-300 ease-in-out transition-all hover:border-blue-950 flex flex-col h-[350px] lg:h-[400px]">
+          <div className="relative rounded-[20px] border border-white/10 
+          bg-[radial-gradient(circle_at_80%_0%,#1C2D4A_0%,#75BAFF1F,60%,#5BE710D,100%)]
+          shadow[inset_0_1px_1px_rgba(255,255,255,0.05)] backdrop-blur-md overflow-hidden p-6 lg:p-7 duration-300 ease-in-out transition-all hover:border-blue-950 flex flex-col h-[350px] lg:h-[400px]">
             <CardGlow id="c1" />
             <CardGrid />
             <div className="relative z-10 flex flex-col h-full">
-              <CardHeader icon={<Image
-              src={seachPink} // Ensure seachPink is imported at the top of your file
-              alt="searchPink icon"
-              width={36}
-              height={36}
-              className="object-contain"
-              />} color="bg-transparent" title="Search Visibility Management" />
+              <CardHeader icon={
+                <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="38" height="38" rx="5.4" fill="url(#paint0_linear_123_49028)"/>
+                <path d="M18.1667 24.8333C21.8486 24.8333 24.8333 21.8486 24.8333 18.1667C24.8333 14.4848 21.8486 11.5 18.1667 11.5C14.4848 11.5 11.5 14.4848 11.5 18.1667C11.5 21.8486 14.4848 24.8333 18.1667 24.8333Z" stroke="white" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M26.499 26.5L22.874 22.875" stroke="white" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                <defs>
+                <linearGradient id="paint0_linear_123_49028" x1="38" y1="-2.34991e-06" x2="-1.425" y2="38" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#FFA9CF"/>
+                <stop offset="1" stop-color="#C62943"/>
+                </linearGradient>
+                </defs>
+                </svg>
+              } color="bg-transparent" title="Search Visibility Management" />
               <p className="text-[12px] text-white/50 leading-relaxed mb-6">Keep SEO efforts organized inside the same system as the campaigns and content they influence.</p>
               
               <div className="relative flex-1 w-full flex items-center justify-center">
@@ -322,13 +323,19 @@ export default function Features() {
             <CardGlow id="c2" />
             <CardGrid />
             <div className="relative z-10 flex flex-col h-full">
-              <CardHeader icon={<Image
-              src={taskIcon} // Ensure seachPink is imported at the top of your file
-              alt="searchPink icon"
-              width={36}
-              height={36}
-              className="object-contain"
-              />} color="bg-transparent" title="Task Alignment" />
+              <CardHeader icon={
+                <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="38" height="38" rx="5.4" fill="url(#paint0_linear_123_49094)"/>
+                <path d="M16.5 18.1667L19 20.6667L27.3333 12.3334" stroke="white" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M26.5 19V24.8333C26.5 25.2754 26.3244 25.6993 26.0118 26.0118C25.6993 26.3244 25.2754 26.5 24.8333 26.5H13.1667C12.7246 26.5 12.3007 26.3244 11.9882 26.0118C11.6756 25.6993 11.5 25.2754 11.5 24.8333V13.1667C11.5 12.7246 11.6756 12.3007 11.9882 11.9882C12.3007 11.6756 12.7246 11.5 13.1667 11.5H22.3333" stroke="white" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                <defs>
+                <linearGradient id="paint0_linear_123_49094" x1="30.875" y1="-1.64565e-06" x2="4.75" y2="38" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#CCFFD4"/>
+                <stop offset="1" stop-color="#2EB0D7"/>
+                </linearGradient>
+                </defs>
+                </svg>
+              } color="bg-transparent" title="Task Alignment" />
               <p className="text-[12px] text-white/50 leading-relaxed mb-6">Tie search priorities to the production and implementation work required to move them forward.</p>
               
               <div className="mt-5 space-y-4 lg:space-y-5 px-2">
@@ -357,13 +364,20 @@ export default function Features() {
             <CardGlow id="c3" />
             <CardGrid />
             <div className="relative z-10 flex flex-col h-full">
-              <CardHeader icon={<Image
-              src={projectIcon} 
-              alt="Project icon"
-              width={36}
-              height={36}
-              className="object-contain"
-              />} color="bg-transparent" title="Project Coordination" />
+              <CardHeader icon={
+                <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="38" height="38" rx="5.4" fill="url(#paint0_linear_123_49146)"/>
+                <path d="M12.333 27.3333H23.9997C24.4417 27.3333 24.8656 27.1577 25.1782 26.8451C25.4907 26.5326 25.6663 26.1087 25.6663 25.6666V15.25L21.083 10.6666H13.9997C13.5576 10.6666 13.1337 10.8422 12.8212 11.1548C12.5086 11.4673 12.333 11.8913 12.333 12.3333V15.6666" stroke="white" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M20.667 10.6666V15.6666H25.667" stroke="white" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M11.5 21.5L13.1667 23.1667L16.5 19.8334" stroke="white" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                <defs>
+                <linearGradient id="paint0_linear_123_49146" x1="38" y1="-1.20327e-06" x2="4.75" y2="40.375" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#ACD5FF"/>
+                <stop offset="1" stop-color="#003F9D"/>
+                </linearGradient>
+                </defs>
+                </svg>
+              } color="bg-transparent" title="Project Coordination" />
               <p className="text-[12px] text-white/50 leading-relaxed mb-6">Manage SEO initiatives with clearer ownership, timelines, and workflow structure.</p>
               
               <div className="relative flex-1 w-full flex flex-col items-center">
@@ -380,13 +394,20 @@ export default function Features() {
                 <div className="relative w-full h-full">
                   {/* Card 1 */}
                   <div className="absolute top-[-22%] -left-[8%] md:top-[-2%] md:left-[2%] max-w-[240px] bg-white rounded-[10px] p-4 shadow-[0_10px_30px_rgba(255,255,255,0.1)] z-10 flex items-center gap-3 scale-[0.75] md:scale-100 origin-top-left md:origin-center transition-all">
-                    <Image
-                    src={guestIcon}
-                    alt="guest"
-                    width={30}
-                    height={30}
-                    className="relative top-[-14px] shrink-0"
-                    />
+                    <div className="relative top-[-14px] shrink-0">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="23.199" height="23.199" rx="3.47985" fill="url(#paint0_linear_123_49170)"/>
+                      <path d="M10.1498 14.0162H9.18317C8.54225 14.0162 7.92759 13.7616 7.4744 13.3084C7.0212 12.8552 6.7666 12.2406 6.7666 11.5997C6.7666 10.9588 7.0212 10.3441 7.4744 9.8909C7.92759 9.43771 8.54225 9.18311 9.18317 9.18311H10.1498" stroke="white" stroke-width="0.966626" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M13.0498 9.18311H14.0164C14.6573 9.18311 15.272 9.43771 15.7252 9.8909C16.1784 10.3441 16.433 10.9588 16.433 11.5997C16.433 12.2406 16.1784 12.8552 15.7252 13.3084C15.272 13.7616 14.6573 14.0162 14.0164 14.0162H13.0498" stroke="white" stroke-width="0.966626" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M9.66602 11.5996H13.5325" stroke="white" stroke-width="0.966626" stroke-linecap="round" stroke-linejoin="round"/>
+                      <defs>
+                      <linearGradient id="paint0_linear_123_49170" x1="23.199" y1="-1.43462e-06" x2="-0.869964" y2="23.199" gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#B8A4FF"/>
+                      <stop offset="1" stop-color="#6B31B6"/>
+                      </linearGradient>
+                      </defs>
+                      </svg>
+                    </div>
                     <div className="flex-1">
                        <h4 className="text-[9px] text-black leading-tight font-semibold">Guest Post Opportunities</h4>
                        <p className="text-[6px] text-gray-500 leading-tight mt-1">Identify blogs in directly related industries where you can potentially post a guest article to improve domain authority.</p>
@@ -401,13 +422,23 @@ export default function Features() {
                   {/* Card 2 */}
                   <div className="absolute top-[37%] -right-[8%] md:top-[45%] md:right-[-2%] max-w-[240px] bg-white rounded-[10px] p-3 shadow-2xl z-20 flex items-center gap-3 scale-[0.80] md:scale-100 origin-bottom-right md:origin-center transition-all">
                     <div className="w-8 h-8 rounded bg-transparent flex items-center justify-center shrink-0">
-                      <Image
-                      src={guestKey}
-                      alt="guestKey"
-                      width={30}
-                      height={30}
-                      className="relative bottom-[10px]"
-                      /> 
+                    <div className="relative bottom-[10px]">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="23.1995" height="23.1995" rx="3.47985" fill="url(#paint0_linear_123_49187)"/>
+                      <g clip-path="url(#clip0_123_49187)">
+                      <path d="M15.9463 6.76636L14.9797 7.73302M14.9797 7.73302L16.4297 9.18302L14.738 10.8747L13.288 9.42469M14.9797 7.73302L13.288 9.42469M11.3015 11.4112C11.5511 11.6574 11.7494 11.9506 11.8852 12.2738C12.021 12.5971 12.0915 12.944 12.0927 13.2946C12.0939 13.6452 12.0257 13.9925 11.8921 14.3167C11.7585 14.6408 11.562 14.9353 11.3141 15.1832C11.0662 15.4311 10.7717 15.6275 10.4476 15.7611C10.1235 15.8948 9.77609 15.963 9.4255 15.9618C9.0749 15.9606 8.728 15.8901 8.40477 15.7543C8.08154 15.6185 7.78837 15.4201 7.54212 15.1706C7.05789 14.6692 6.78994 13.9977 6.796 13.3007C6.80206 12.6037 7.08163 11.9369 7.57451 11.4441C8.06738 10.9512 8.73413 10.6716 9.43113 10.6655C10.1281 10.6595 10.7996 10.9274 11.301 11.4117L11.3015 11.4112ZM11.3015 11.4112L13.288 9.42469" stroke="white" stroke-width="0.966667" stroke-linecap="round" stroke-linejoin="round"/>
+                      </g>
+                      <defs>
+                      <linearGradient id="paint0_linear_123_49187" x1="18.8496" y1="-1.00469e-06" x2="2.89994" y2="23.1995" gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#B6DAFF"/>
+                      <stop offset="1" stop-color="#63A2FF"/>
+                      </linearGradient>
+                      <clipPath id="clip0_123_49187">
+                      <rect width="11.6" height="11.6" fill="white" transform="translate(5.7998 5.7998)"/>
+                      </clipPath>
+                      </defs>
+                      </svg>
+                    </div>
                     </div>
                     <div className="flex-1">
                        <h4 className="text-[9px] text-black leading-tight font-semibold">Guest Post Opportunities</h4>
@@ -431,13 +462,17 @@ export default function Features() {
             <div className="relative z-10 flex flex-col h-full">
               <CardHeader 
                 icon={
-                  <Image
-                    src={optimizationIcon} // Ensure optimizationIcon is imported at the top of your file
-                    alt="Optimization icon"
-                    width={36}
-                    height={36}
-                    className="object-contain"
-                  />
+                  <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="38" height="38" rx="5.4" fill="url(#paint0_linear_123_49219)"/>
+                  <path d="M27.3337 14.8334L20.2503 21.9167L16.0837 17.75L10.667 23.1667" stroke="white" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M22.333 14.8334H27.333V19.8334" stroke="white" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                  <defs>
+                  <linearGradient id="paint0_linear_123_49219" x1="30.875" y1="-1.64565e-06" x2="4.75" y2="38" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#FFCC9C"/>
+                  <stop offset="1" stop-color="#FF8853"/>
+                  </linearGradient>
+                  </defs>
+                  </svg>
                 } 
                 color="bg-transparent" 
                 title="Optimization Support" 
@@ -558,7 +593,7 @@ function CardGlow({ id }: { id: string }) {
 function CardGrid() {
   return (
     <div className="absolute inset-0 opacity-20 pointer-events-none">
-      <div className="w-full h-full" style={{ backgroundImage: "linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px)", backgroundSize: "60px 60px" }} />
+      <div className="w-full h-full" style={{ backgroundImage: "linear-gradient(rgba(255,255,255,0.05) 1px, transparent 0.5px), linear-gradient(90deg, rgba(255,255,255,0.05) 2px, transparent 1px)", backgroundSize: "60px 60px" }} />
     </div>
   );
 }
