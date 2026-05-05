@@ -116,14 +116,14 @@ export default function ModuleSection() {
                 <div className="w-10 h-10 rounded-lg flex items-center justify-center mb-6">
                   <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <rect width="42" height="42" rx="5.4" fill="url(#paint0_linear_123_52398)"/>
-                  <path d="M27 15L16 26L11 21" stroke="white" strokeWidth="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M31 19L23.5 26.5L22 25" stroke="white" strokeWidth="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M27 15L16 26L11 21" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M31 19L23.5 26.5L22 25" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                   <defs>
                     <linearGradient id="paint0_linear_123_52398" x1="34.125" y1="-1.81887e-06" x2="5.25" y2="42" gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#CCFFD4"/>
-                    <stop offset="1" stop-color="#2EB0D7"/>
+                    <stop stopColor="#CCFFD4"/>
+                    <stop offset="1" stopColor="#2EB0D7"/>
                     </linearGradient>
-                  </defs>
+                  </defs> 
                   </svg>
                 </div>
 

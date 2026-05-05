@@ -56,8 +56,8 @@ export default function Footer() {
             <path d="M62.2617 40.6491H69.3996L87.0913 18.0369V40.6491H92.1436V9.01123H86.9895L62.2617 40.6491Z" fill="#01091E"/>
             <defs>
             <linearGradient id="paint0_linear_123_55565" x1="32.7033" y1="-0.0782898" x2="3.49245" y2="43.738" gradientUnits="userSpaceOnUse">
-            <stop stop-color="#5BEC71"/>
-            <stop offset="1" stop-color="#0F5CD7"/>
+            <stop stopColor="#5BEC71"/>
+            <stop offset="1" stopColor="#0F5CD7"/>
             </linearGradient>
             </defs>
             </svg>

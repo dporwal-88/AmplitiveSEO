@@ -1,138 +1,32 @@
+
 "use client";
 
-import { useState } from "react";
+import DesktopBackground from "./DesktopHome/DesktopBackground";
+import Grid from "./DesktopHome/Grid";
+import SeoOverview from "./DesktopHome/SeoOverview";
+import HealthScore from "./DesktopHome/HealthScore";
+import SearchClick from "./DesktopHome/SearchClick";
+import MobileSearchPill from "./MobileHome/MobileSearchPill";
+import MobileBusinessBox from "./MobileHome/MobileBusinessBox";
+import MobileSeoOverview from "./MobileHome/MobileSeoOverview";
+import MobileSearchClick from "./MobileHome/MobileSearchClick";
+import MobileHealthScore from "./MobileHome/MobileHealthScore";
+import MobileBackground from "./MobileHome/MobileBackground";
 
 export default function Features() {
   return (
     <div
-      className="relative w-full min-h-screen bg-[#01091E] text-white overflow-x-hidden"
+      className="relative w-full min-h-[100dvh] bg-[#01091E] text-white overflow-x-hidden"
       style={{ fontFamily: "'Montserrat', sans-serif" }}
     >
       {/* ── Desktop Background Glow (Hidden on Mobile) ── */}
-      <div className="absolute top-0 left-0 w-full h-full pointer-events-none z-0 hidden lg:flex justify-center overflow-hidden">
-        <svg
-          width="1446"
-          height="750"
-          viewBox="0 0 1728 1168"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g
-            opacity="0.6"
-            filter="url(#filter0_f_123_48913)"
-            style={{ mixBlendMode: "plus-lighter" }}
-          >
-            <path
-              d="M1371.61 -553.896C1644.95 -273.424 1639.17 175.53 1358.7 448.872C1078.22 722.213 629.269 716.432 355.928 435.96C82.5869 155.488 88.3677 -293.467 368.84 -566.808C649.313 -840.15 1098.27 -834.369 1371.61 -553.896Z"
-              fill="url(#paint0_radial_123_48913)"
-            />
-          </g>
-          <defs>
-            <filter
-              id="filter0_f_123_48913"
-              x="-450.186"
-              y="-1372.92"
-              width="2627.91"
-              height="2627.91"
-              filterUnits="userSpaceOnUse"
-              colorInterpolationFilters="sRGB"
-            >
-              <feFlood floodOpacity="0" result="BackgroundImageFix" />
-              <feBlend
-                mode="normal"
-                in="SourceGraphic"
-                in2="BackgroundImageFix"
-                result="shape"
-              />
-              <feGaussianBlur
-                stdDeviation="302.415"
-                result="effect1_foregroundBlur_123_48913"
-              />
-            </filter>
-            <radialGradient
-              id="paint0_radial_123_48913"
-              cx="0"
-              cy="0"
-              r="1"
-              gradientUnits="userSpaceOnUse"
-              gradientTransform="translate(845.511 -78.6694) rotate(45.7377) scale(757.944 704.321)"
-            >
-              <stop offset="0.303662" stopColor="#5BEC71" />
-              <stop offset="0.870122" stopColor="#0F72D7" />
-            </radialGradient>
-          </defs>
-        </svg>
-      </div>
+      <DesktopBackground/>
 
       {/* ── Mobile Background Glow (Hidden on Desktop) ── */}
-      <div className="absolute top-0 left-0 w-full h-[800px] pointer-events-none z-0 flex lg:hidden justify-center overflow-hidden">
-        <svg
-          width="100%"
-          height="100%"
-          viewBox="0 0 400 800"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g
-            opacity="0.6"
-            filter="url(#mob_bg_blur)"
-            style={{ mixBlendMode: "plus-lighter" }}
-          >
-            <path
-              d="M350 -50C450 -50 450 350 200 350C-50 350 -100 150 -100 -50C-100 -250 100 -250 350 -50Z"
-              fill="url(#mob_bg_grad)"
-            />
-          </g>
-          <defs>
-            <filter
-              id="mob_bg_blur"
-              x="-300"
-              y="-400"
-              width="1000"
-              height="1000"
-              filterUnits="userSpaceOnUse"
-              colorInterpolationFilters="sRGB"
-            >
-              <feFlood floodOpacity="0" result="BackgroundImageFix" />
-              <feBlend
-                mode="normal"
-                in="SourceGraphic"
-                in2="BackgroundImageFix"
-                result="shape"
-              />
-              <feGaussianBlur
-                stdDeviation="100"
-                result="effect1_foregroundBlur"
-              />
-            </filter>
-            <radialGradient
-              id="mob_bg_grad"
-              cx="0"
-              cy="0"
-              r="1"
-              gradientUnits="userSpaceOnUse"
-              gradientTransform="translate(200 50) rotate(90) scale(350 350)"
-            >
-              <stop offset="0.2" stopColor="#5BEC71" />
-              <stop offset="0.9" stopColor="#0F72D7" />
-            </radialGradient>
-          </defs>
-        </svg>
-      </div>
+      <MobileBackground/>
 
       {/* ── Shared Grid ── */}
-      <div
-        className="absolute inset-0 pointer-events-none z-0"
-        style={{
-          backgroundImage:
-            "linear-gradient(rgba(255,255,255,0.1 ) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px)",
-          backgroundSize: "120px 120px",
-          backgroundPosition: "center -30px",
-          WebkitMaskImage:
-            "linear-gradient(to bottom, black 60%, transparent 100%)",
-          maskImage: "linear-gradient(to bottom, black 60%, transparent 100%)",
-        }}
-      />
+      <Grid/>
 
       {/* ══════════════════════════════════════════════
           HERO — DESKTOP ONLY (lg+) 
@@ -227,237 +121,11 @@ export default function Features() {
             </div>
 
             {/* 3. Main SEO Overview Card */}
-            <div
-              className="absolute rounded-[20px] p-7 z-10 overflow-hidden"
-              style={{
-                width: "504.4px",
-                height: "356px",
-                top: "60px",
-                left: "190px",
-                background: "#01091E",
-                boxShadow:
-                  "0 0 30px rgba(135, 206, 250, 0.4), 0 10px 20px rgba(0,0,0,0.2)",
-              }}
-            >
-              <div className="absolute top-0 left-0 pointer-events-none opacity-100 ">
-                <svg
-                  width="420"
-                  height="360"
-                  viewBox="0 0 316 220"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g opacity="0.6" filter="url(#filter0_f_123_55689)">
-                    <path
-                      d="M221.551 -35.7261C221.551 53.4702 149.243 125.778 60.0471 125.778C-29.1492 125.778 -101.457 53.4702 -101.457 -35.7261C-101.457 -124.922 -29.1492 -197.23 60.0471 -197.23C149.243 -197.23 221.551 -124.922 221.551 -35.7261Z"
-                      fill="url(#paint0_radial_123_55689)"
-                    />
-                  </g>
-                  <defs>
-                    <filter
-                      id="filter0_f_123_55689"
-                      x="-194.959"
-                      y="-290.733"
-                      width="510.013"
-                      height="510.013"
-                      filterUnits="userSpaceOnUse"
-                      colorInterpolationFilters="sRGB"
-                    >
-                      <feFlood floodOpacity="0" result="BackgroundImageFix" />
-                      <feBlend
-                        mode="normal"
-                        in="SourceGraphic"
-                        in2="BackgroundImageFix"
-                        result="shape"
-                      />
-                      <feGaussianBlur
-                        stdDeviation="46.7512"
-                        result="effect1_foregroundBlur_123_55689"
-                      />
-                    </filter>
-                    <radialGradient
-                      id="paint0_radial_123_55689"
-                      cx="0"
-                      cy="0"
-                      r="1"
-                      gradientUnits="userSpaceOnUse"
-                      gradientTransform="translate(60.2009 -41.8416) rotate(90) scale(172.623 160.411)"
-                    >
-                      <stop stopColor="#5BEC71" />
-                      <stop offset="1" stopColor="#0F72D7" />
-                    </radialGradient>
-                  </defs>
-                </svg>
-              </div>
-              <div className="relative z-10">
-                <h3 className="text-[23px] text-white pt-2 font-medium mb-6 px-5">
-                  SEO Overview
-                </h3>
-
-                <div className="pt-5 space-y-8 px-5">
-                  {/* Bar 1 */}
-                  <div className="w-full">
-                    <div className="text-[13px] text-white/70 mb-2">
-                      Total Keywords
-                    </div>
-                    <div className="flex items-center w-full gap-4">
-                      <div className="flex-1 bg-white/10 rounded-full h-[10px]">
-                        <div
-                          className="bg-gradient-to-r from-[#5BEC71] to-[#0F72D7] h-[10px] rounded-full"
-                          style={{ width: "33%" }}
-                        ></div>
-                      </div>
-                      <span className="text-[15px] font-semibold text-white/70 text-right w-5 shrink-0">
-                        33
-                      </span>
-                    </div>
-                  </div>
-
-                  {/* Bar 2 */}
-                  <div className="w-full">
-                    <div className="text-[13px] text-white/70 mb-2">
-                      Total Backlinks
-                    </div>
-                    <div className="flex items-center w-full gap-4">
-                      <div className="flex-1 bg-white/10 rounded-full h-[10px]">
-                        <div
-                          className="bg-gradient-to-r from-[#5BEC71] to-[#0F72D7] h-[10px] rounded-full"
-                          style={{ width: "56%" }}
-                        ></div>
-                      </div>
-                      <span className="text-[15px] font-semibold text-white/70 text-right w-5 shrink-0">
-                        56
-                      </span>
-                    </div>
-                  </div>
-
-                  {/* Bar 3 */}
-                  <div className="w-full">
-                    <div className="text-[13px] text-white/70 mb-2">
-                      Organic Traffic
-                    </div>
-                    <div className="flex items-center w-full gap-4">
-                      <div className="flex-1 bg-white/10 rounded-full h-[10px]">
-                        <div
-                          className="bg-gradient-to-r from-[#5BEC71] to-[#0F72D7] h-[10px] rounded-full"
-                          style={{ width: "44%" }}
-                        ></div>
-                      </div>
-                      <span className="text-[15px] font-semibold text-white/70 text-right w-5 shrink-0">
-                        44
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
+            <SeoOverview/>
             {/* 4. Company Health Score */}
-            <div
-              className="absolute rounded-[8px] bg-[#FFF5EE] p-2 pl-4  z-30"
-              style={{
-                width: "180px",
-                top: "45px",
-                left: "560px",
-                boxShadow:
-                  "0 0 30px rgba(135, 206, 250, 0.4), 0 10px 20px rgba(0,0,0,0.2)",
-              }}
-            >
-              <div className="flex items-center gap-2 mb-1">
-                <div className="w-5 h-5 rounded bg-orange-400 flex items-center justify-center">
-                  <svg
-                    width="22"
-                    height="22"
-                    viewBox="0 0 22 22"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <rect
-                      width="21.1445"
-                      height="21.1445"
-                      rx="3.00475"
-                      fill="url(#paint0_linear_123_48980)"
-                    />
-                    <path
-                      d="M15.2095 10.5722H13.3547L11.9636 14.7455L9.18142 6.39899L7.79033 10.5722H5.93555"
-                      stroke="white"
-                      strokeWidth="0.927391"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                    <defs>
-                      <linearGradient
-                        id="paint0_linear_123_48980"
-                        x1="17.1799"
-                        y1="-9.15695e-07"
-                        x2="2.64306"
-                        y2="21.1445"
-                        gradientUnits="userSpaceOnUse"
-                      >
-                        <stop stopColor="#FFCC9C" />
-                        <stop offset="1" stopColor="#FF8853" />
-                      </linearGradient>
-                    </defs>
-                  </svg>
-                </div>
-              </div>
-              <div className="text-[10px] text-black/60 font-medium">
-                Company Health Score
-              </div>
-              <div className="text-[24px] font-semibold text-black">88%</div>
-            </div>
-
+            <HealthScore/>
             {/* 5. 86% Search Click Circle */}
-            <div
-              className="absolute rounded-[8px] bg-[#FFF5EE] flex flex-col items-center justify-center z-30"
-              style={{
-                width: "106px",
-                height: "120px",
-                top: "340px",
-                left: "100px",
-                boxShadow:
-                  "0 0 30px rgba(135, 206, 250, 0.6), 0 10px 20px rgba(0,0,0,0.2)",
-              }}
-            >
-              <div className="relative flex items-center justify-center w-[88px] h-[88px]">
-                <svg className="w-full h-full transform" viewBox="0 0 36 36">
-                  <defs>
-                    <linearGradient
-                      id="pinkGradient"
-                      x1="60%"
-                      y1="0%"
-                      x2="100%"
-                      y2="100%"
-                    >
-                      <stop offset="40%" stopColor="#FFA9CF" />
-                      <stop offset="100%" stopColor="#C62943" />
-                    </linearGradient>
-                  </defs>
-                  <path
-                    className="text-gray-200"
-                    d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="3"
-                  />
-                  <path
-                    strokeDasharray="60, 100"
-                    d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
-                    fill="none"
-                    stroke="url(#pinkGradient)"
-                    strokeWidth="3.5"
-                  />
-                </svg>
-                <div className="absolute flex flex-col items-center justify-center">
-                  <span className="text-[16px] font-bold text-black leading-none">
-                    86%
-                  </span>
-                  <span className="text-[6px] text-black/50 mt-1">
-                    Search Clicks
-                  </span>
-                </div>
-              </div>
-            </div>
+            <SearchClick/>
           </div>
         </div>
       </div>
@@ -471,7 +139,7 @@ export default function Features() {
           <div className="inline-flex items-center justify-center px-3.5 py-1.5 border border-white/20 rounded-full mb-4 text-[11px] font-medium text-white/70 tracking-wide">
             SEO Workspace
           </div>
-          <h1 className="text-[28px] sm:text-[32px] font-medium leading-[1.2] text-white mb-4">
+          <h1 className="text-[22px] sm:text-[24px] font-medium leading-[1.2] text-white mb-4">
             Run SEO with AI across your <br />
             <span className="font-semibold bg-clip-text text-transparent bg-gradient-to-r from-[#5BEC71] to-[#00A3FF]">
               entire system
@@ -507,236 +175,22 @@ export default function Features() {
         <div className="w-full max-w-[340px] relative mt-36 mb-16">
           
           {/* Track Search Visibility Pill (Added for Mobile) */}
-          <div className="absolute -top-14 right-12 flex items-center gap-2 px-4 py-2 rounded-full border border-white/10 bg-[#01091E]/20 backdrop-blur-md text-[11px] text-white/80 z-20 shadow-lg">
-            <svg
-              width="12"
-              height="12"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-            >
-              <circle cx="11" cy="11" r="8" />
-              <line x1="21" y1="21" x2="16.65" y2="16.65" />
-            </svg>
-            Track search visibility
-          </div>
+          <MobileSearchPill/>
 
           {/* Business Box (Added for Mobile) */}
-          <div
-            className="absolute flex flex-col items-center justify-center gap-1 rounded-[10px] text-[9px] text-white/80 z-20 hover:bg-[#0c182e]/15 transition-all"
-            style={{
-              width: "55px",
-              height: "55px",
-              top: "-10px",
-              left: "-15px",
-              backgroundImage: `url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='10' ry='10' stroke='white' stroke-width='1.5' stroke-dasharray='4%2c 4' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e")`,
-              backgroundPosition: "center",
-              backgroundRepeat: "no-repeat",
-              backgroundColor: "rgba(1, 9, 30, 0.6)",
-              backdropFilter: "blur(6px)",
-            }}
-          >
-            <svg
-              width="12"
-              height="12"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-            >
-              <circle cx="11" cy="11" r="8" />
-              <line x1="21" y1="21" x2="16.65" y2="16.65" />
-            </svg>
-            Business
-          </div>
+          <MobileBusinessBox/>
 
           {/* SEO Overview Card (Converted to #01091E with Inner SVG Glow for Mobile) */}
-          <div
-            className="rounded-[18px] p-5 shadow-[0_20px_50px_rgba(0,0,0,0.7)] text-left relative overflow-hidden z-10 translate-x-4 scale-70 -translate-y-8"
-            style={{
-              background: "#01091E",
-              border: "1px solid rgba(255, 255, 255, 0.1)",
-              boxShadow: "0 0 30px rgba(135, 206, 250, 0.15), 0 10px 20px rgba(0,0,0,0.3)",
-            }}
-          >
-            {/* Inner Glow SVG inside Mobile Card */}
-            <div className="absolute top-0 left-0 w-full h-full pointer-events-none opacity-80">
-              <svg
-                width="100%"
-                height="100%"
-                viewBox="0 0 316 220"
-                fill="none"
-                preserveAspectRatio="xMidYMid slice"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g opacity="0.6" filter="url(#filter_mob_card_glow)">
-                  <path
-                    d="M221.551 -35.7261C221.551 53.4702 149.243 125.778 60.0471 125.778C-29.1492 125.778 -101.457 53.4702 -101.457 -35.7261C-101.457 -124.922 -29.1492 -197.23 60.0471 -197.23C149.243 -197.23 221.551 -124.922 221.551 -35.7261Z"
-                    fill="url(#paint_mob_card_glow)"
-                  />
-                </g>
-                <defs>
-                  <filter
-                    id="filter_mob_card_glow"
-                    x="-194.959"
-                    y="-290.733"
-                    width="510.013"
-                    height="510.013"
-                    filterUnits="userSpaceOnUse"
-                    colorInterpolationFilters="sRGB"
-                  >
-                    <feFlood floodOpacity="0" result="BackgroundImageFix" />
-                    <feBlend
-                      mode="normal"
-                      in="SourceGraphic"
-                      in2="BackgroundImageFix"
-                      result="shape"
-                    />
-                    <feGaussianBlur
-                      stdDeviation="46.7512"
-                      result="effect1_foregroundBlur"
-                    />
-                  </filter>
-                  <radialGradient
-                    id="paint_mob_card_glow"
-                    cx="0"
-                    cy="0"
-                    r="1"
-                    gradientUnits="userSpaceOnUse"
-                    gradientTransform="translate(60.2009 -41.8416) rotate(90) scale(172.623 160.411)"
-                  >
-                    <stop stopColor="#5BEC71" />
-                    <stop offset="1" stopColor="#0F72D7" />
-                  </radialGradient>
-                </defs>
-              </svg>
-            </div>
-
-            {/* Mobile Card Text Content */}
-            <div className="relative z-10">
-              <h3 className="text-[15px] text-white font-medium mb-4">
-                SEO Overview
-              </h3>
-              <div className="space-y-4">
-                <div>
-                  <div className="flex justify-between text-[10px] text-white/70 mb-1.5">
-                    <span>Total Keywords</span>
-                    <span>33</span>
-                  </div>
-                  <div className="w-full bg-white/10 rounded-full h-[5px]">
-                    <div
-                      className="bg-gradient-to-r from-[#0F72D7] to-[#3ab4aa] h-[5px] rounded-full"
-                      style={{ width: "33%" }}
-                    ></div>
-                  </div>
-                </div>
-                <div>
-                  <div className="flex justify-between text-[10px] text-white/70 mb-1.5">
-                    <span>Total Backlinks</span>
-                    <span>56</span>
-                  </div>
-                  <div className="w-full bg-white/10 rounded-full h-[5px]">
-                    <div
-                      className="bg-gradient-to-r from-[#0F72D7] to-[#0F72D7] h-[5px] rounded-full"
-                      style={{ width: "56%" }}
-                    ></div>
-                  </div>
-                </div>
-                <div>
-                  <div className="flex justify-between text-[10px] text-white/70 mb-1.5">
-                    <span>Organic Traffic</span>
-                    <span>44</span>
-                  </div>
-                  <div className="w-full bg-white/10 rounded-full h-[5px]">
-                    <div
-                      className="bg-gradient-to-r from-[#5BEC71] to-[#0F72D7] h-[5px] rounded-full"
-                      style={{ width: "44%" }}
-                    ></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <MobileSeoOverview/>
 
           {/* Floating Mobile Items */}
-          <div className="absolute bottom-8 -left-1 rounded-[12px] bg-[#FFF5EE] flex flex-col items-center justify-center shadow-[0_0_20px_rgba(135,206,250,0.3)] w-[70px] h-[80px] z-30">
-            <div className="relative flex items-center justify-center w-[50px] h-[50px]">
-              <svg
-                className="w-full h-full transform "
-                viewBox="0 0 36 36"
-              >
-                <path
-                  className="text-gray-200"
-                  d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="3"
-                />
-                <path
-                  className="text-pink-500"
-                  strokeDasharray="60, 100"
-                  d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="4"
-                />
-              </svg>
-              <div className="absolute flex flex-col items-center justify-center">
-                <span className="text-[10px] font-bold text-black">86%</span>
-                <span className="text-[5px] text-gray-400 ">Search Clicks</span>
-              </div>
-            </div>
-          </div>
-          <div className="absolute -top-6 -right-5 rounded-[10px] bg-[#FFF5EE] py-1 px-2 shadow-[0_0_20px_rgba(135,206,250,0.3)] w-[120px] h-[60px] z-30 scale-80">
-            <div className="flex flex-col  gap-1.5 items-start">
-              <div className="w-4 h-4 rounded bg-orange-400 flex ">
-                <svg
-                    width="22"
-                    height="22"
-                    viewBox="0 0 22 22"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <rect
-                      width="21.1445"
-                      height="21.1445"
-                      rx="3.00475"
-                      fill="url(#paint0_linear_123_48980)"
-                    />
-                    <path
-                      d="M15.2095 10.5722H13.3547L11.9636 14.7455L9.18142 6.39899L7.79033 10.5722H5.93555"
-                      stroke="white"
-                      strokeWidth="0.927391"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                    <defs>
-                      <linearGradient
-                        id="paint0_linear_123_48980"
-                        x1="17.1799"
-                        y1="-9.15695e-07"
-                        x2="2.64306"
-                        y2="21.1445"
-                        gradientUnits="userSpaceOnUse"
-                      >
-                        <stop stopColor="#FFCC9C" />
-                        <stop offset="1" stopColor="#FF8853" />
-                      </linearGradient>
-                    </defs>
-                  </svg>
-              </div>
-              <div className="text-[6px] text-black/60 font-medium">
-                Company Health Score
-              </div>
-            </div>
-            <div className="text-[18px] font-semibold text-black text-start">88%</div>
-          </div>
+          <MobileSearchClick/>
+          <MobileHealthScore/>
         </div>
       </div>
 
       {/* ── Bottom Transition Overlay ── */}
-      <div className="absolute bottom-0 left-0 w-full h-48 bg-gradient-to-t from-[#01091E] to-transparent pointer-events-none z-10" />
+      <div className="hidden lg:block absolute bottom-0 left-0 w-full h-48 bg-gradient-to-t from-[#01091E] to-transparent pointer-events-none z-10" />
     </div>
   );
 }
