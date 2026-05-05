@@ -1,10 +1,10 @@
-export default function Cards(){
-    return (
+export default function Cards() {
+  return (
     <div className="bg-[#01091E] ">
-    {/* ══════════════════════════════════════════════
+      {/* ══════════════════════════════════════════════
           SECTION 2 — TEXT BLOCK
       ══════════════════════════════════════════════ */}
-    <div className="relative z-10 py-10 lg:py-16 px-5 lg:px-6 max-w-[1300px] mx-auto text-center lg:-mt-10">
+      <div className="relative z-10 py-10 lg:py-16 px-5 lg:px-6 max-w-[1300px] mx-auto text-center lg:-mt-10">
         <h2 className="text-[22px] sm:text-[26px] lg:text-[38px] font-medium leading-[1.35] text-white mb-5">
           SEO only works when it's{" "}
           <span className="font-semibold bg-clip-text text-transparent bg-gradient-to-r from-[#5BEC71] via-[#0F72D7] to-[#003F9D]">
@@ -26,12 +26,66 @@ export default function Cards(){
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-8">
           {/* ── CARD 1: Search Visibility Management ── */}
           <div
-            className="relative rounded-[20px] border border-white/10 
-          bg-[radial-gradient(circle_at_80%_0%,#1C2D4A_0%,#75BAFF1F,60%,#5BE710D,100%)]
-          shadow[inset_0_1px_1px_rgba(255,255,255,0.05)] backdrop-blur-md overflow-hidden p-6 lg:p-7 duration-300 ease-in-out transition-all hover:border-blue-950 flex flex-col h-[350px] lg:h-[400px]"
+            className="relative rounded-[20px] border border-white/10 bg-[#01091E] 
+  shadow-[inset_4_5px_6px_rgba(255,255,255,0.1),0_20px_50px_rgba(0,0,0,0.5)] 
+  backdrop-blur-md overflow-hidden p-6 lg:p-7 duration-300 ease-in-out 
+  transition-all hover:border-white/20 flex flex-col h-[350px] lg:h-[400px]"
           >
-            <CardGlow id="c1" />
+            {/* ── Background SVG Glow (Bottom Right) ── */}
+            <div className="absolute -bottom-20 -right-20 pointer-events-none z-0 opacity-40">
+              <svg
+                width="332"
+                height="480"
+                viewBox="0 0 332 480"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                className="blur-3xl"
+              >
+                <g opacity="0.6" filter="url(#filter0_f_bottom_glow)">
+                  <path
+                    d="M667.947 373C667.947 516.042 551.989 632 408.947 632C265.906 632 149.947 516.042 149.947 373C149.947 229.958 265.906 114 408.947 114C551.989 114 667.947 229.958 667.947 373Z"
+                    fill="url(#paint0_radial_bottom_glow)"
+                  />
+                </g>
+                <defs>
+                  <filter
+                    id="filter0_f_bottom_glow"
+                    x="-9.15527e-05"
+                    y="-35.9474"
+                    width="817.895"
+                    height="817.895"
+                    filterUnits="userSpaceOnUse"
+                    color-interpolation-filters="sRGB"
+                  >
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feBlend
+                      mode="normal"
+                      in="SourceGraphic"
+                      in2="BackgroundImageFix"
+                      result="shape"
+                    />
+                    <feGaussianBlur
+                      stdDeviation="74.9737"
+                      result="effect1_foregroundBlur_bottom_glow"
+                    />
+                  </filter>
+                  <radialGradient
+                    id="paint0_radial_bottom_glow"
+                    cx="0"
+                    cy="0"
+                    r="1"
+                    gradientUnits="userSpaceOnUse"
+                    gradientTransform="translate(409.194 363.193) rotate(90) scale(276.831 257.246)"
+                  >
+                    <stop stop-color="#5BEC71" />
+                    <stop offset="1" stop-color="#0F72D7" />
+                  </radialGradient>
+                </defs>
+              </svg>
+            </div>
+
             <CardGrid />
+
             <div className="relative z-10 flex flex-col h-full">
               <CardHeader
                 icon={
@@ -46,7 +100,7 @@ export default function Cards(){
                       width="38"
                       height="38"
                       rx="5.4"
-                      fill="url(#paint0_linear_123_49028)"
+                      fill="url(#paint0_linear_header)"
                     />
                     <path
                       d="M18.1667 24.8333C21.8486 24.8333 24.8333 21.8486 24.8333 18.1667C24.8333 14.4848 21.8486 11.5 18.1667 11.5C14.4848 11.5 11.5 14.4848 11.5 18.1667C11.5 21.8486 14.4848 24.8333 18.1667 24.8333Z"
@@ -64,7 +118,7 @@ export default function Cards(){
                     />
                     <defs>
                       <linearGradient
-                        id="paint0_linear_123_49028"
+                        id="paint0_linear_header"
                         x1="38"
                         y1="-2.34991e-06"
                         x2="-1.425"
@@ -150,7 +204,7 @@ export default function Cards(){
                     <span>Progress</span>
                     <span>8/10 links</span>
                   </div>
-                  <div className="w-full bg-gray-100 rounded-full h-[3px] mb-2">
+                  <div className="w-full bg-white/10 rounded-full h-[3px] mb-2">
                     <div className="bg-[#0F72D7] h-[3px] rounded-full w-[80%]"></div>
                   </div>
                   <div className="text-[7px] text-gray-300">
@@ -170,7 +224,6 @@ export default function Cards(){
               </div>
             </div>
           </div>
-
           {/* ── CARD 2: Task Alignment ── */}
           <div className="relative rounded-[20px] border border-white/10 bg-[#0B1528]/60 backdrop-blur-md overflow-hidden hover:border-blue-950 transition-all duration-300 ease-in-out p-6 lg:p-7 flex flex-col h-[350px] lg:h-[400px]">
             <CardGlow id="c2" />
@@ -722,8 +775,8 @@ export default function Cards(){
           </div>
         </div>
       </div>
-      </div>
-    );
+    </div>
+  );
 }
 
 function CardGlow({ id }: { id: string }) {
