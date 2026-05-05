@@ -64,7 +64,7 @@ export default function ModuleSection() {
           </div>
           <div className="w-px h-[60px]" style={{ background: "linear-gradient(to bottom, #0f72d7, transparent)" }} />
         </div>
-
+        
         {/* RIGHT DIV: Text */}
         {/* Centered on mobile, left-aligned on desktop */}
         <div className="flex-1 w-full lg:pl-8 flex justify-center lg:justify-start">
@@ -88,7 +88,6 @@ export default function ModuleSection() {
             <Image
               src={colorMix}
               alt="UI Preview"
-              // Adjusted height to act as a banner on mobile, retains auto height on desktop
               className="w-full h-[140px] sm:h-[180px] lg:h-auto object-cover"
               priority
             />
@@ -112,8 +111,6 @@ export default function ModuleSection() {
             {improvements.map((item, i) => (
               <div
                 key={i}
-                // REMOVED: min-w-[310px] (This was causing your horizontal mobile scrolling)
-                // ADDED: w-full (Allows it to scale perfectly on all phones)
                 className="bg-white rounded-[20px] p-6 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border w-full min-h-[120px] border-black/[0.03] flex flex-col items-start hover:shadow-lg transition-all duration-300"
               >
                 <div className="w-10 h-10 rounded-lg flex items-center justify-center mb-6">
