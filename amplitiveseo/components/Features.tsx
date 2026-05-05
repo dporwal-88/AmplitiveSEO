@@ -368,7 +368,7 @@ export default function Features() {
               
               <div className="relative flex-1 w-full flex flex-col items-center">
                 {/* Nav Pills - Mobile scrollable, scaled font */}
-                <div className="flex items-center gap-2 md:gap-4 text-[8.5px] md:text-[10px] text-white/60 bg-white/5 rounded-full px-0.5 py-0.5 border border-white/10 mb-8 mt-2 w-max max-w-full overflow-x-auto [&::-webkit-scrollbar]:hidden">
+                <div className="flex items-center gap-0.4 md:gap-4 text-[7.5px] md:text-[10px] text-white/60 bg-white/5 rounded-full px-0.5 py-0.5 border border-white/10 mb-8 mt-2 w-max max-w-full overflow-x-auto [&::-webkit-scrollbar]:hidden">
                   <span className="bg-white text-black px-3 md:px-5 py-1 rounded-full font-medium whitespace-nowrap">All</span>
                   <span className="px-2 md:px-0 whitespace-nowrap cursor-pointer hover:text-white transition-colors">Backlinks</span>
                   <span className="px-2 md:px-0 whitespace-nowrap cursor-pointer hover:text-white transition-colors">Keywords</span>
@@ -450,7 +450,7 @@ export default function Features() {
               <div className="relative flex-1 w-full mt-2">
                 
                 {/* Pill Navbar */}
-                <div className="absolute top-[-15px] left-1/2 -translate-x-1/2 flex items-center gap-6 text-[10px] font-medium text-white/60 bg-[#0c182e]/90 border border-white/10 rounded-full px-6 py-2 shadow-xl z-20 backdrop-blur-sm">
+                <div className="absolute top-[-15px] left-1/2 -translate-x-1/2 flex items-center gap-4 text-[8px] md:gap-6 md:text-[10px] font-medium text-white/60 bg-[#0c182e]/90 border border-white/10 rounded-full px-4 md:px-6 py-1 md:py-2 shadow-xl z-20 backdrop-blur-sm">
                   <span className="hover:text-white cursor-pointer transition-colors">Target</span>
                   <span className="hover:text-white cursor-pointer transition-colors">Optimize</span> 
                   <span className="hover:text-white cursor-pointer transition-colors">Grow</span>
