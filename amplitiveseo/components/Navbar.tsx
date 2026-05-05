@@ -35,8 +35,8 @@ export default function Navbar() {
           <path d="M37.6904 24.6088H42.0115L52.7218 10.9199V24.6088H55.7803V5.45589H52.6601L37.6904 24.6088Z" fill="white"/>
           <defs>
           <linearGradient id="paint0_linear_123_48915" x1="19.7979" y1="-0.0473951" x2="2.11426" y2="26.4781" gradientUnits="userSpaceOnUse">
-          <stop stop-color="#5BEC71"/>
-          <stop offset="1" stop-color="#0F5CD7"/>
+          <stop stopColor="#5BEC71"/>
+          <stop offset="1" stopColor="#0F5CD7"/>
           </linearGradient>
           </defs>
           </svg>
