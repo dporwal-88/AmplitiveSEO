@@ -132,16 +132,17 @@ export default function Optimization(){
                         >
                           <stop offset="0%" stopColor="#5BEC71" />
                           <stop offset="50%" stopColor="#3ab4aa" />
-                          <stop offset="100%" stopColor="#00A3FF" />
+                          <stop offset="100%" stopColor="#0F72D7" />
                         </linearGradient>
                       </defs>
 
                       {/* Main Line connecting the dots */}
                       <path
-                        d="M 13.5,53 L 33,42 L 50.5,25 L 68.5,52 L 86.5,20 L 96,4"
+                        d="M 12.5,65 L 33,50 L 50.5,30 L 68.5,58 L 88.5,30 L 93.5,23"
                         fill="none"
                         stroke="url(#optGrad)"
                         strokeWidth="2.5"
+                        strokeOpacity="0.7"
                         vectorEffect="non-scaling-stroke"
                       />
                     </svg>
@@ -152,8 +153,8 @@ export default function Optimization(){
                   <div
                     className="absolute w-[14px] h-[14px] bg-[#5BEC71]/20 rounded-full flex items-center justify-center shadow-[0_0_10px_rgba(91,236,113,0.5)]"
                     style={{
-                      left: "13.5%",
-                      bottom: "47%",
+                      left: "12.5%",
+                      bottom: "35%",
                       transform: "translate(-50%, 50%)",
                     }}
                   >
@@ -164,7 +165,7 @@ export default function Optimization(){
                     className="absolute w-[14px] h-[14px] bg-[#5BEC71]/20 rounded-full flex items-center justify-center shadow-[0_0_10px_rgba(91,236,113,0.5)]"
                     style={{
                       left: "33%",
-                      bottom: "58%",
+                      bottom: "50%",
                       transform: "translate(-50%, 50%)",
                     }}
                   >
@@ -175,7 +176,7 @@ export default function Optimization(){
                     className="absolute w-[14px] h-[14px] bg-[#3ab4aa]/20 rounded-full flex items-center justify-center shadow-[0_0_10px_rgba(58,180,170,0.5)]"
                     style={{
                       left: "50.5%",
-                      bottom: "75%",
+                      bottom: "70%",
                       transform: "translate(-50%, 50%)",
                     }}
                   >
@@ -186,7 +187,7 @@ export default function Optimization(){
                     className="absolute w-[14px] h-[14px] bg-[#3ab4aa]/20 rounded-full flex items-center justify-center shadow-[0_0_10px_rgba(58,180,170,0.5)]"
                     style={{
                       left: "68.5%",
-                      bottom: "48%",
+                      bottom: "42%",
                       transform: "translate(-50%, 50%)",
                     }}
                   >
@@ -196,8 +197,8 @@ export default function Optimization(){
                   <div
                     className="absolute w-[14px] h-[14px] bg-[#00A3FF]/20 rounded-full flex items-center justify-center shadow-[0_0_10px_rgba(0,163,255,0.5)]"
                     style={{
-                      left: "86.5%",
-                      bottom: "80%",
+                      left: "88.5%",
+                      bottom: "70%",
                       transform: "translate(-50%, 50%)",
                     }}
                   >
@@ -208,14 +209,14 @@ export default function Optimization(){
                   <div
                     className="absolute text-[#00A3FF]"
                     style={{
-                      left: "95.5%",
-                      bottom: "95%",
-                      transform: "translate(-50%, 50%)",
+                      left: "93.5%",
+                      bottom: "77%",
+                      transform: "translate(-63%, 63%)",
                     }}
                   >
                     <svg
-                      width="14"
-                      height="14"
+                      width="20"
+                      height="20"
                       viewBox="0 0 24 24"
                       fill="none"
                       stroke="currentColor"
