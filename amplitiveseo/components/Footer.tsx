@@ -4,8 +4,9 @@
 export default function Footer() {
   return (
     <footer
-      className="relative overflow-hidden bg-white text-[#0a0f1e]"
-      style={{ fontFamily: "'Montserrat', sans-serif" }}
+      className="relative overflow-hidden text-[#0a0f1e]"
+      style={{ fontFamily: "'Montserrat', sans-serif" ,backgroundColor: "#ffffff",
+        backgroundImage: "radial-gradient(#e5e7eb 1px, transparent 1px)", }}
     >
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');

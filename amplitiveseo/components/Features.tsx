@@ -16,7 +16,7 @@ import MobileBackground from "./MobileHome/MobileBackground";
 export default function Features() {
   return (
     <div
-      className="relative w-full min-h-[100dvh] bg-[#01091E] text-white overflow-x-hidden"
+      className="relative w-full min-h-[100dvh] bg-[#01091E] text-white "
       style={{ fontFamily: "'Montserrat', sans-serif" }}
     >
       {/* ── Desktop Background Glow (Hidden on Mobile) ── */}
