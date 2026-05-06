@@ -68,7 +68,7 @@ export default function Optimization(){
                     "radial-gradient(circle at 100% 100%, black, transparent 90%)",
                 }}
               />
-              <p className="text-[12px] text-white/50 leading-relaxed mb-6">
+              <p className="text-[12px] text-white/80 leading-relaxed mb-6">
                 Keep search-driven work closer to reporting, iteration, and
                 broader performance operations.
               </p>
@@ -76,7 +76,7 @@ export default function Optimization(){
               {/* Chart Area */}
               <div className="relative flex-1 w-full mt-2">
                 {/* Pill Navbar */}
-                <div className="absolute top-[-15px] left-1/2 -translate-x-1/2 flex items-center gap-4 text-[8px] md:gap-6 md:text-[10px] font-medium text-white/60 bg-[#0c182e]/90 border border-white/10 rounded-full px-4 md:px-6 py-1 md:py-2 shadow-xl z-20 backdrop-blur-sm">
+                <div className="absolute top-[-15px] left-1/2 -translate-x-1/2 flex items-center gap-4 text-[8px] md:gap-6 md:text-[10px] font-medium text-white/80 bg-[#0c182e]/90 border border-white/10 rounded-full px-4 md:px-4 py-1 md:py-1.5 shadow-xl z-20 backdrop-blur-sm">
                   <span className="hover:text-white cursor-pointer transition-colors">
                     Target
                   </span>
@@ -92,23 +92,23 @@ export default function Optimization(){
                 <div className="absolute inset-0 top-[-18px]">
                   {/* Gradient Vertical Bars (Perfectly aligned to nodes) */}
                   <div
-                    className="absolute bottom-0 bg-gradient-to-t from-transparent to-white/[0.08] w-[8%] rounded-t-[4px]"
+                    className="absolute bottom-0 bg-gradient-to-t from-transparent to-white/[0.08] w-[8.5%]"
                     style={{ left: "9.5%", height: "47%" }}
                   ></div>
                   <div
-                    className="absolute bottom-0 bg-gradient-to-t from-transparent to-white/[0.08] w-[8%] rounded-t-[4px]"
+                    className="absolute bottom-0 bg-gradient-to-t from-transparent to-white/[0.08] w-[8.5%] "
                     style={{ left: "29%", height: "58%" }}
                   ></div>
                   <div
-                    className="absolute bottom-0 bg-gradient-to-t from-transparent to-white/[0.08] w-[8%] rounded-t-[4px]"
+                    className="absolute bottom-0 bg-gradient-to-t from-transparent to-white/[0.08] w-[8.5%] "
                     style={{ left: "46.5%", height: "75%" }}
                   ></div>
                   <div
-                    className="absolute bottom-0 bg-gradient-to-t from-transparent to-white/[0.08] w-[8%] rounded-t-[4px]"
+                    className="absolute bottom-0 bg-gradient-to-t from-transparent to-white/[0.08] w-[8.5%] "
                     style={{ left: "64.5%", height: "48%" }}
                   ></div>
                   <div
-                    className="absolute bottom-0 bg-gradient-to-t from-transparent to-white/[0.08] w-[8%] rounded-t-[4px]"
+                    className="absolute bottom-0 bg-gradient-to-t from-transparent to-white/[0.08] w-[8.5%]"
                     style={{ left: "82.5%", height: "80%" }}
                   ></div>
 

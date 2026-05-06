@@ -127,17 +127,17 @@ export default function SearchCard(){
                 color="bg-transparent"
                 title="Search Visibility Management"
               />
-              <p className="text-[12px] text-white/50 leading-relaxed mb-6">
+              <p className="text-[12px] text-white/80 leading-relaxed md:mb-6">
                 Keep SEO efforts organized inside the same system as the
                 campaigns and content they influence.
               </p>
 
               <div className="relative flex-1 w-full flex items-center justify-center">
                 {/* Search Bar Pill */}
-                <div className="absolute top-[12%] left-[8%] md:left-[50%] md:top-10 md:right-[6%] bg-[#0c182e]/90 border border-white/10 rounded-full px-4 py-2 pr-8 flex items-center gap-2 text-[10px] text-white/60 shadow-lg z-20 transition-all">
+                <div className="absolute top-[4%] left-[8%] md:left-[50%] md:top-10 md:right-[6%] bg-[#0c182e]/90 border border-white/10 rounded-full md:px-4 md:py-2 md:pr-8 py-1.5 px-2 pr-6 flex items-center gap-2 text-[8px] md:text-[13.5px] text-white/60 shadow-lg z-20 transition-all scale-[0.7]">
                   <svg
-                    width="12"
-                    height="12"
+                    width="14"
+                    height="14"
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
@@ -150,7 +150,7 @@ export default function SearchCard(){
                 </div>
 
                 {/* Campaign Card 1 */}
-                <div className="absolute top-[45%] -left-[2%] md:top-3 md:left-[9%] max-w-[180px] md:w-[240px] bg-white rounded-[8px] p-3 shadow-xl z-10 scale-[0.8] md:scale-80 lg:scale-100 origin-top-left md:origin-center transition-all" style={{boxShadow:
+                <div className="absolute top-[26%] left-[5%] md:top-3 md:left-[9%] w-[190px] md:w-[190px] bg-white rounded-[8px] p-3 shadow-xl z-10 scale-[0.5] md:scale-80 lg:scale-100 origin-top-left md:origin-center transition-all" style={{boxShadow:
           "0 0 0 5px rgba(255, 255, 255, 0.08), 0 10px 20px rgba(0, 0, 0, 0.2)"}}>
                   <div className="flex justify-between items-start mb-2">
                     <div className="text-[9px] text-gray-800 leading-tight">
@@ -179,7 +179,7 @@ export default function SearchCard(){
                 </div>
 
                 {/* Campaign Card 2 */}
-                <div className="absolute top-[35%] -right-[5%] md:top-[45%] md:right-[5%] max-w-[200px] bg-white md:w-[240px] rounded-[8px] p-3 shadow-2xl z-30 scale-[0.85] md:scale-85 lg:scale-110 origin-bottom-right md:origin-center transition-all" style={{boxShadow:
+                <div className="absolute top-[0.1%] -right-[1%] md:top-[45%] md:right-[5%] w-[180px] bg-white md:w-[180px] rounded-[8px] p-3 shadow-2xl z-30 scale-[0.6] md:scale-100 lg:scale-120 origin-bottom-right md:origin-center transition-all" style={{boxShadow:
           "0 0 0 6px rgba(255, 255, 255, 0.08), 0 10px 20px rgba(0, 0, 0, 0.2)"}}>
                   <div className="flex justify-between items-start mb-2">
                     <div className="text-[9px] text-gray-800 leading-tight">
@@ -208,14 +208,14 @@ export default function SearchCard(){
                 </div>
 
                 {/* Create New Box */}
-                <div className="absolute bottom-[2%] left-[10%] md:bottom-[5%] md:left-[16.5%] w-[70px] h-[70px] rounded-[10px] border border-dashed border-white/30 bg-white/5 flex flex-col items-center justify-center gap-1 cursor-pointer hover:bg-white/10 transition-all z-10 md:z-20 scale-[0.8] md:scale-100 origin-bottom-left md:origin-center">
-                  <span className="text-white text-[20px] leading-none">+</span>
-                  <span className="text-[9px] text-white/70 text-center leading-tight">
-                    Create
-                    <br />
-                    New
-                  </span>
-                </div>
+               <div className="hidden md:flex md:absolute bottom-[2%] left-[10%] md:bottom-[5%] md:left-[16.5%] w-[70px] h-[70px] rounded-[10px] border border-dashed border-white/30 bg-white/5 flex-col items-center justify-center gap-1 cursor-pointer hover:bg-white/10 transition-all z-10 md:z-20 scale-[0.8] md:scale-100 origin-bottom-left md:origin-center">
+  <span className="text-white text-[20px] leading-none">+</span>
+  <span className="text-[9px] text-white/70 text-center leading-tight">
+    Create
+    <br />
+    New
+  </span>
+</div>
               </div>
             </div>
           </div>

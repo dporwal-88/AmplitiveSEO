@@ -123,25 +123,25 @@ export default function TaskCard(){
                 color="bg-transparent"
                 title="Task Alignment"
               />
-              <p className="text-[12px] text-white/50 leading-relaxed mb-6">
+              <p className="text-[12px] text-white/80 leading-relaxed mb-6">
                 Tie search priorities to the production and implementation work
                 required to move them forward.
               </p>
 
-              <div className="mt-2 space-y-5 lg:space-y-6 px-1">
+              <div className="md:mt-2 space-y-0.5 md:space-y-1  lg:space-y-1 px-1">
                 {/* Bar 1 */}
                 <div className="w-full">
-                  <div className="text-[12px] text-white/70 mb-2">
+                  <div className="text-[8px] md:text-[12px] text-white/70 md:mb-2 ">
                     Total Keywords
                   </div>
-                  <div className="flex items-center w-full gap-4">
+                  <div className="flex items-center w-full md:gap-4">
                     <div className="flex-1 bg-white/10 rounded-full h-[6px]">
                       <div
-                        className="bg-gradient-to-r from-[#5BEC71] to-[#0F72D7] h-[6px] rounded-full"
+                        className="bg-gradient-to-r from-[#5BEC71] to-[#0F72D7] h-[4px] md:h-[6px] rounded-full"
                         style={{ width: "33%" }}
                       ></div>
                     </div>
-                    <span className="text-[13px] font-semibold text-white/80 text-right w-5 shrink-0">
+                    <span className="text-[10px] md:text-[13px] font-semibold text-white/80 text-right w-5 shrink-0">
                       33
                     </span>
                   </div>
@@ -149,17 +149,17 @@ export default function TaskCard(){
 
                 {/* Bar 2 */}
                 <div className="w-full">
-                  <div className="text-[12px] text-white/70 mb-2">
+                  <div className="text-[8px] md:text-[12px] text-white/70 md:mb-2 ">
                     Total Backlinks
                   </div>
-                  <div className="flex items-center w-full gap-4">
+                  <div className="flex items-center w-full md:gap-4">
                     <div className="flex-1 bg-white/10 rounded-full h-[6px]">
                       <div
-                        className="bg-gradient-to-r from-[#5BEC71] to-[#0F72D7] h-[6px] rounded-full"
+                        className="bg-gradient-to-r from-[#5BEC71] to-[#0F72D7] h-[4px] md:h-[6px] rounded-full"
                         style={{ width: "56%" }}
                       ></div>
                     </div>
-                    <span className="text-[13px] font-semibold text-white/80 text-right w-5 shrink-0">
+                    <span className="text-[10px] md:text-[13px] font-semibold text-white/80 text-right w-5 shrink-0">
                       56
                     </span>
                   </div>
@@ -167,17 +167,17 @@ export default function TaskCard(){
 
                 {/* Bar 3 */}
                 <div className="w-full">
-                  <div className="text-[12px] text-white/70 mb-2">
+                  <div className="text-[8px] md:text-[12px] text-white/70 md:mb-2 ">
                     Organic Traffic
                   </div>
-                  <div className="flex items-center w-full gap-4">
+                  <div className="flex items-center w-full  md:gap-4">
                     <div className="flex-1 bg-white/10 rounded-full h-[6px]">
                       <div
-                        className="bg-gradient-to-r from-[#5BEC71] to-[#0F72D7] h-[6px] rounded-full"
+                        className="bg-gradient-to-r from-[#5BEC71] to-[#0F72D7] h-[4px] md:h-[6px] rounded-full"
                         style={{ width: "72%" }}
                       ></div>
                     </div>
-                    <span className="text-[13px] font-semibold text-white/80 text-right w-5 shrink-0">
+                    <span className="text-[10px] md:text-[13px] font-semibold text-white/80 text-right w-5 shrink-0">
                       72
                     </span>
                   </div>
@@ -185,17 +185,17 @@ export default function TaskCard(){
 
                 {/* Bar 4 */}
                 <div className="w-full">
-                  <div className="text-[12px] text-white/70 mb-2">
+                  <div className="text-[8px] md:text-[12px] text-white/70 mb-1 md:mb-2 ">
                     Health Score
                   </div>
-                  <div className="flex items-center w-full gap-4">
+                  <div className="flex items-center w-full gap:1 md:gap-4">
                     <div className="flex-1 bg-white/10 rounded-full h-[6px]">
                       <div
-                        className="bg-gradient-to-r from-[#5BEC71] to-[#0F72D7] h-[6px] rounded-full"
+                        className="bg-gradient-to-r from-[#5BEC71] to-[#0F72D7] h-[4px] md:h-[6px] rounded-full"
                         style={{ width: "79%" }}
                       ></div>
                     </div>
-                    <span className="text-[13px] font-semibold text-white/80 text-right w-5 shrink-0">
+                    <span className="text-[10px] md:text-[13px] font-semibold text-white/80 text-right w-5 shrink-0">
                       79
                     </span>
                   </div>

@@ -129,27 +129,27 @@ export default function ProjectCard(){
                 color="bg-transparent"
                 title="Project Coordination"
               />
-              <p className="text-[12px] text-white/50 leading-relaxed mb-6">
+              <p className="text-[12px] md:text-[13px] text-white/80 leading-relaxed mb-3 md:mb-6">
                 Manage SEO initiatives with clearer ownership, timelines, and
                 workflow structure.
               </p>
 
               <div className="relative flex-1 w-full flex flex-col items-center">
                 {/* Nav Pills - Mobile scrollable, scaled font */}
-                <div className="flex items-center gap-0.4 md:gap-4 text-[7.5px] md:text-[10px] text-white/60 bg-white/5 rounded-full px-0.5 py-0.5 border border-white/10 mb-8 mt-2 w-max max-w-full overflow-x-auto [&::-webkit-scrollbar]:hidden">
-                  <span className="bg-white text-black px-3 md:px-5 py-1 rounded-full font-medium whitespace-nowrap">
+                <div className="flex items-center gap-0.1 md:gap-4 text-[7.5px] md:text-[13px] text-white/80 bg-white/5 rounded-full px-0.5 py-0.5 md:py-1.5 border border-white/10 mb-8 mt-2 w-max max-w-full overflow-x-auto [&::-webkit-scrollbar]:hidden scale-[0.9]">
+                  <span className="bg-white text-black px-3 md:px-7 py-1 md:py-1 rounded-full font-medium whitespace-nowrap">
                     All
                   </span>
-                  <span className="px-2 md:px-0 whitespace-nowrap cursor-pointer hover:text-white transition-colors">
+                  <span className="px-2 md:px-2 md:py-1 whitespace-nowrap cursor-pointer hover:text-white transition-colors">
                     Backlinks
                   </span>
-                  <span className="px-2 md:px-0 whitespace-nowrap cursor-pointer hover:text-white transition-colors">
+                  <span className="px-2 md:px-2 md:py-1 whitespace-nowrap cursor-pointer hover:text-white transition-colors">
                     Keywords
                   </span>
-                  <span className="px-2 md:px-0 whitespace-nowrap cursor-pointer hover:text-white transition-colors">
+                  <span className="px-2 md:px-2 md:py-1 whitespace-nowrap cursor-pointer hover:text-white transition-colors">
                     Content
                   </span>
-                  <span className="px-2 md:px-0 whitespace-nowrap cursor-pointer hover:text-white transition-colors">
+                  <span className="px-2 md:px-2 md:py-1 whitespace-nowrap cursor-pointer hover:text-white transition-colors">
                     On-Page
                   </span>
                 </div>
@@ -157,7 +157,7 @@ export default function ProjectCard(){
                 {/* Task Cards */}
                 <div className="relative w-full h-full">
                   {/* Card 1 */}
-                  <div className="absolute top-[-22%] -left-[8%] md:top-[-2%] md:left-[2%] max-w-[240px] bg-white rounded-[10px] p-4 shadow-[0_10px_30px_rgba(255,255,255,0.1)] z-10 flex items-center gap-3 scale-[0.75] md:scale-100 origin-top-left md:origin-center transition-all" style={{boxShadow:
+                  <div className="absolute top-[-22%] left-[4%] md:top-[-2%] md:left-[2%] max-w-[230px] bg-white rounded-[10px] p-4 shadow-[0_10px_30px_rgba(255,255,255,0.1)] z-10 flex items-center gap-3 scale-[0.45] md:scale-100 origin-top-left md:origin-center transition-all md:scale-[0.85] " style={{boxShadow:
           "0 0 0 5px rgba(255, 255, 255, 0.08), 0 10px 20px rgba(0, 0, 0, 0.2)"}}>
                     <div className="relative top-[-14px] shrink-0">
                       <svg
@@ -233,7 +233,7 @@ export default function ProjectCard(){
                   </div>
 
                   {/* Card 2 */}
-                  <div className="absolute top-[37%] -right-[8%] md:top-[45%] md:right-[-3%] max-w-[240px] bg-white rounded-[10px] p-3 shadow-2xl z-20 flex items-center gap-3 scale-[0.80] md:scale-100 origin-bottom-right md:origin-center transition-all" style={{boxShadow:
+                  <div className="absolute -top-[27%] right-[5%] md:top-[25%] md:right-[3%] max-w-[230px] bg-white rounded-[10px] p-3.5 shadow-2xl z-20 flex items-center gap-3 scale-[0.50] md:scale-100 origin-bottom-right md:origin-center transition-all md:scale-[0.9] " style={{boxShadow:
           "0 0 0 5px rgba(255, 255, 255, 0.08), 0 10px 20px rgba(0, 0, 0, 0.2)"}}>
                     <div className="w-8 h-8 rounded bg-transparent flex items-center justify-center shrink-0">
                       <div className="relative bottom-[10px]">

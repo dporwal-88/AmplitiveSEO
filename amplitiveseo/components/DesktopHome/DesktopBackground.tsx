@@ -3,7 +3,7 @@ export default function DesktopBackground(){
         <div className="absolute top-0 left-0 w-full h-full pointer-events-none z-0 hidden lg:flex justify-center overflow-hidden">
         <svg
           width="1446"
-          height="750"
+          height="530"
           viewBox="0 0 1728 1168"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
