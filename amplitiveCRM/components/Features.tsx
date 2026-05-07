@@ -1,5 +1,13 @@
 "use client";
 
+import { Montserrat_Alternates } from 'next/font/google';
+
+// Configure the font
+const montserratAlt = Montserrat_Alternates({
+  subsets: ['latin'],
+  weight: ['600', '700'], // 600 is semi-bold
+});
+
 import AliceCard from "./DesktopHome/AliceCard";
 import DesktopBackground from "./DesktopHome/DesktopBackground";
 import Grid from "./DesktopHome/Grid";
@@ -9,7 +17,8 @@ import MobileBackground from "./MobileHome/MobileBackground";
 export default function Features() {
   return (
     <div
-      className="relative w-full min-h-[100dvh] bg-[#01091E] text-white pb-10 overflow-hidden"
+      // FIX 1: Removed `min-h-[100dvh]` to prevent forcing a massive 1180px height on portrait tablets
+      className="relative w-full bg-[#01091E] text-white pb-10 overflow-hidden"
       style={{ fontFamily: "'Montserrat', sans-serif" }}
     >
       {/* ── Desktop Background Glow ── */}
@@ -24,18 +33,20 @@ export default function Features() {
       {/* ══════════════════════════════════════════════
           HERO — DESKTOP & TABLET (md+) 
       ══════════════════════════════════════════════ */}
-      <div className="relative w-full h-screen items-center justify-center hidden md:flex">
+      {/* FIX 2: Replaced `h-screen` with `md:h-[650px] lg:h-screen`. 
+                 This tightly wraps the scaled layout on tablets but keeps the full-screen effect on laptops. */}
+      <div className="relative w-full md:h-[650px] lg:h-screen items-center justify-center hidden md:flex mt-10 lg:mt-0">
         <div className="relative min-w-[1485px] min-h-[600px] flex items-center justify-between scale-[0.5] lg:scale-[0.65] xl:scale-[0.8] 2xl:scale-100 origin-center z-10">
           
           {/* Left Text Content */}
           <div className="flex-shrink-0 flex flex-col justify-center w-[650px] h-[411px] pl-4 -translate-y-[20px]">
-            <div className="inline-flex items-center justify-center px-4 py-2 border border-white/20 rounded-full bg-transparent mb-5 text-[13.5px] font-medium text-white/70 tracking-wide w-max">
+            <div className="inline-flex items-center justify-center px-4 py-2 border border-white/20 rounded-full bg-[#FFFFFF08] mb-5 text-[13.5px] font-medium text-white/70 tracking-wide w-max">
               CRM & Pipelines
             </div>
             <h1 className="text-[55px] md:text-[52px] font-medium leading-[1.15] text-white mb-6">
               Your pipeline runs <br />
               inside your{" "}
-              <span className="font-semibold bg-clip-text text-transparent bg-gradient-to-r from-[#5BEC71] to-[#0E78E9]">
+              <span className={`${montserratAlt.className} font-semibold bg-clip-text text-transparent bg-gradient-to-r from-[#5BEC71] to-[#0E78E9]`}>
                 AI system
               </span>
             </h1>
@@ -67,20 +78,20 @@ export default function Features() {
 
           {/* Right Floating Elements (CRM Workspace UI) */}
           <AliceCard/>
-          </div>
+        </div>
       </div>
 
       {/* ══════════════════════════════════════════════
           HERO — MOBILE ONLY (< md)
       ══════════════════════════════════════════════ */}
       <div className="relative z-10 md:hidden flex flex-col items-center text-center px-5 pt-14 mx-auto w-full max-w-[480px]">
-        <div className="w-[90%] mb-22">
+        <div className="w-[92%] mb-22">
           <div className="inline-flex items-center justify-center px-4 py-1.5 border border-white/20 rounded-full mb-5 text-[11px] font-medium text-white/70 tracking-wide">
             CRM & Pipelines
           </div>
           <h1 className="text-[23px] sm:text-[28px] font-medium leading-[1.35] text-white mb-4">
             Your pipeline runs <br /> inside your{" "}
-            <span className="font-semibold bg-clip-text text-transparent bg-gradient-to-r from-[#5BEC71] to-[#00A3FF]">
+            <span className={`${montserratAlt.className} font-semibold bg-clip-text text-transparent bg-gradient-to-r from-[#5BEC71] to-[#0E78E9]`}>
               AI system
             </span>
           </h1>
@@ -89,7 +100,6 @@ export default function Features() {
             revenue move together.
           </p>
           <div className="flex flex-col items-center gap-3">
-              
               <button className="flex items-center cursor-pointer gap-2 px-6 py-2 rounded-[7px] text-[12px]  text-[#020a16] bg-white hover:bg-gray-100 transition-all shadow-[0_0_15px_rgba(255,255,255,0.15)] scale-[0.86] ">
                 View Pricing
                 <svg
@@ -112,7 +122,7 @@ export default function Features() {
         </div>
         
         {/* Mobile CRM Card Wrapper */}
-          <MobileAliceCard/>
+        <MobileAliceCard/>
       </div>
     </div>
   );
