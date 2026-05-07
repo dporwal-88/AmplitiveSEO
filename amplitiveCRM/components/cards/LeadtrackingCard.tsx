@@ -301,7 +301,7 @@ export default function LeadTrackingCard() {
             </div>
 
             {/* Bottom Row: Empty Placeholder (Center) */}
-            <div className="absolute top-[155px] md:top-[211px] left-[26%] w-[180px] h-[95px] bg-[#141C2F]/80 border border-white/5 rounded-[12px] scale-[1.1] shadow-lg backdrop-blur-sm z-10 transition-all" />
+            <div className="absolute top-[155px] md:top-[211px] left-[26%] md:left-[19%] w-[180px] h-[95px] bg-[#141C2F]/80 border border-white/5 rounded-[12px] scale-[1.1] shadow-lg backdrop-blur-sm z-10 transition-all" />
 
             {/* Bottom Row: Frank Martin (Right) */}
             <div

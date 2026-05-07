@@ -105,7 +105,7 @@ export default function Footer() {
         {/* ── BOTTOM ── */}
         <div className="flex flex-col items-center sm:flex-row  gap-20 py-6 text-center sm:text-left">
 
-          <p className="text-[11.5px] text-[#9ca3af]">
+          <p className="text-[11.5px] text-[#3E3E3E]">
             ©2026 Amplitive. All rights reserved.
           </p>
 
@@ -114,7 +114,7 @@ export default function Footer() {
               <a
                 key={item}
                 href="#"
-                className="text-[11.5px] text-[#9ca3af] hover:text-[#1ab87e]"
+                className="text-[11.5px] text-[#3E3E3E] hover:text-[#1ab87e]"
               >
                 {item}
               </a>

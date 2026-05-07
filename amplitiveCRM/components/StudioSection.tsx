@@ -62,15 +62,14 @@ export default function StudioSection() {
           {/* Heading: Hides the hard line break on mobile so it wraps naturally like Figma. 
               (Also fixed your "text-bold" typo to "font-bold"!) */}
          <h2 className="text-[27px] md:text-[40px] text-center md:text-left font-medium tracking-tight leading-[1.1] md:leading-[1.05] text-white mb-6 md:mb-8">
-            See Content Studio    
+            See CRM inside    
             <br className="hidden md:block" />
-            <span className="md:hidden"> </span>inside Amplitive.
+            <span className="md:hidden"> </span> Amplitive.
           </h2>
 
           {/* Subtext: Adjusted slightly for mobile readability */}
           <p className="text-[12px] text-center md:text-left items-center md:text-[12px] font-medium text-white/60 leading-relaxed mb-10 md:mb-12 max-w-[280px] md:max-w-[480px]">
-            Book a walkthrough to see how content studio fits into a more connected
-            marketing operation.
+            Book a walkthrough to see how crm & pipelines fits into a more connected marketing operation.
           </p>
 
           {/* CTAs: Stacked as a column on mobile, row on desktop */}

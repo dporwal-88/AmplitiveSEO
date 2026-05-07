@@ -5,20 +5,20 @@ import colorMix from "../public/colorMix.png";
 export default function ModuleSection() {
   const improvements = [
     {
-      title: "Better execution continuity",
-      desc: "Keep search initiatives moving without losing context between tools.",
+      title: "Clearer lead handling",
+      desc: "Keep follow-up visible and easier to manage across the team.",
     },
     {
-      title: "Stronger content coordination",
-      desc: "Tie SEO priorities more directly to content planning and production.",
+      title: "Better pipeline coordination",
+      desc: "Make it easier to understand who owns the next step and what is blocking progress.",
     },
     {
-      title: "Clearer ownership",
-      desc: "Make it easier to see what needs to be done and who is driving it.",
+      title: "Connected campaign attribution",
+      desc: "Keep lead movement closer to the work that created it.",
     },
     {
-      title: "More connected optimization",
-      desc: "Keep SEO closer to the reporting and workflow decisions to improve performance.",
+      title: "Less manual chasing",
+      desc: "Reduce the time spent piecing together status from separate systems.",
     },
   ];
 
@@ -69,11 +69,11 @@ export default function ModuleSection() {
         {/* Centered on mobile, left-aligned on desktop */}
         <div className="flex-1 w-full lg:pl-8 flex justify-center lg:justify-start">
           <div className="max-w-[480px] w-full space-y-4 lg:space-y-6 text-center lg:text-left">
-            <p className="text-[13px] text-[#4b5563] leading-relaxed">
-              SEO becomes part of the campaign plan, content system, and optimization loop inside Amplitive.
+            <p className="text-[13px] text-[#01091E] leading-[1.2] md:leading-relaxed">
+              CRM & Pipelines connect to outreach, nurture, campaign execution, and reporting so lead handling stays part of the same operating system.
             </p>
-            <p className="text-[13px] text-[#4b5563] leading-relaxed">
-              That connection helps teams execute search work with less fragmentation between strategy, production, and follow-through.
+            <p className="text-[13px] text-[#01091E] leading-[1.2] md:leading-relaxed">
+              That makes it easier to coordinate what happens before a lead enters the pipeline and after it does.
             </p>
           </div>
         </div>
@@ -104,7 +104,7 @@ export default function ModuleSection() {
           
           {/* Desktop heading (Hidden on mobile because the text is overlaid on the image above) */}
           <h3 className="text-[32px] font-semibold mt-10 mb-5 text-[#01091E] hidden lg:block">
-            What this module improves.
+            What the platform improves day to day.
           </h3>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-18 gap-y-6 lg:gap-y-8 mt-6 lg:mt-0 w-full">
@@ -113,7 +113,7 @@ export default function ModuleSection() {
                 key={i}
                 className="bg-white rounded-[20px] p-6 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border w-full min-h-[120px] border-black/[0.03] flex flex-col items-start hover:shadow-lg transition-all duration-300"
               >
-                <div className="w-10 h-10 rounded-lg flex items-center justify-center mb-6">
+                <div className="w-8 h-8 md:w-10 md:h-10 rounded-lg flex items-center justify-center mb-6">
                   <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <rect width="42" height="42" rx="5.4" fill="url(#paint0_linear_123_52398)"/>
                   <path d="M27 15L16 26L11 21" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
@@ -127,10 +127,10 @@ export default function ModuleSection() {
                   </svg>
                 </div>
 
-                <h4 className="text-[13px] font-bold mb-3 text-[#0a0f1e]">
+                <h4 className="text-[14px] font-semibold mb-3 text-[#0a0f1e]">
                   {item.title}
                 </h4>
-                <p className="text-[12px] text-[#6b7280] leading-relaxed">
+                <p className="text-[12px] text-[#1F1F1F] leading-[1.2] md:leading-relaxed">
                   {item.desc}
                 </p>
               </div>
