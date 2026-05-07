@@ -88,7 +88,7 @@ export default function Footer() {
               <a
                 key={link}
                 href={"/" + link.toLowerCase()}
-                className="text-[13px] text-[#3a4060] hover:text-[#1ab87e] font-medium transition-colors"
+                className="text-[13px] text-[#3a4060] hover:underline font-medium transition-colors"
               >
                 {link}
               </a>
@@ -101,7 +101,7 @@ export default function Footer() {
               <a
                 key={link}
                 href={"/" + link.toLowerCase()}
-                className="text-[13px] text-[#3a4060] hover:text-[#1ab87e] font-medium transition-colors"
+                className="text-[13px] text-[#3a4060] hover:text-[#1ab87e] hover:underline font-medium transition-colors"
               >
                 {link}
               </a>

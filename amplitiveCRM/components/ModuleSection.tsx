@@ -83,7 +83,7 @@ export default function ModuleSection() {
       <div className="max-w-[1200px] mx-auto px-6 pb-16 lg:pb-24 flex flex-col lg:flex-row items-center lg:items-start gap-10 lg:gap-16">
         
         {/* LEFT DIV: Image Container */}
-        <div className="w-full lg:w-[40%] flex justify-center lg:justify-start">
+        <div className="w-full md:w-[90%] lg:w-[35%] md:translate-y-12 flex justify-center lg:justify-start">
           <div className="rounded-[16px] overflow-hidden shadow-2xl relative w-full sm:max-w-[400px] lg:max-w-none">
             <Image
               src={colorMix}
@@ -111,9 +111,9 @@ export default function ModuleSection() {
             {improvements.map((item, i) => (
               <div
                 key={i}
-                className="bg-white rounded-[20px] p-6 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border w-full min-h-[120px] border-black/[0.03] flex flex-col items-start hover:shadow-lg transition-all duration-300"
+                className="bg-white rounded-[12px] p-6 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border w-full min-h-[120px] md:h-[160px] border-black/[0.03] flex flex-col items-start hover:shadow-lg transition-all duration-300"
               >
-                <div className="w-8 h-8 md:w-10 md:h-10 rounded-lg flex items-center justify-center mb-6">
+                <div className="w-8 h-8 rounded-[8px] flex items-center justify-center mb-4">
                   <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <rect width="42" height="42" rx="5.4" fill="url(#paint0_linear_123_52398)"/>
                   <path d="M27 15L16 26L11 21" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
@@ -130,7 +130,7 @@ export default function ModuleSection() {
                 <h4 className="text-[14px] font-semibold mb-3 text-[#0a0f1e]">
                   {item.title}
                 </h4>
-                <p className="text-[12px] text-[#1F1F1F] leading-[1.2] md:leading-relaxed">
+                <p className="text-[11px] text-[#1F1F1F] leading-[1] md:leading-relaxed">
                   {item.desc}
                 </p>
               </div>

@@ -32,7 +32,7 @@ export default function Features() {
           HERO — DESKTOP ONLY (lg+) 
       ══════════════════════════════════════════════ */}
       <div className="relative w-full h-screen items-center justify-center hidden lg:flex">
-        <div className="relative min-w-[1485px] min-h-[600px] flex items-center justify-between scale-[0.65] xl:scale-[0.8] min-[1440px]:scale-[0.9] 2xl:scale-100 origin-center z-10">
+        <div className="relative min-w-[1485px] min-h-[600px] flex items-center justify-between scale-[0.65] xl:scale-[0.8] min-[930px]:scale-[0.9] 2xl:scale-100 origin-center z-10">
           {/* Left Text Content */}
           <div className="flex-shrink-0 flex flex-col justify-center w-[650px] h-[411px] pl-4 -translate-y-[20px]">
             <div className="inline-flex items-center justify-center px-3.5 py-2 border border-white/20 rounded-full bg-transparent mb-4 text-[13.5px] font-medium text-white/70 tracking-wide w-max">

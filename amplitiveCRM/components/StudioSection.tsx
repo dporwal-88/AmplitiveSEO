@@ -20,7 +20,7 @@ export default function StudioSection() {
           alt="Studio Background"
           fill
           priority
-          className="object-cover object-bottom md:object-center"
+          className="object-cover object-bottom md:object-center" 
         />
         <div className="absolute inset-0 bg-black/20" />
       </div>

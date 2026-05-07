@@ -117,7 +117,7 @@ export default function FollowUpCard() {
         <div className="relative flex-1 w-full mt-4 md:mt-2">
           
           {/* SCALING WRAPPER: Locks internal dimensions so flex works correctly, then scales down for mobile */}
-          <div className="relative w-full min-w-[380px] h-[280px] md:min-w-0 md:h-full origin-top-left scale-[0.38] sm:scale-[0.8] md:scale-[0.85] lg:scale-100 flex flex-col justify-between max-w-[400px] translate-x-5 md:translate-x-0">
+          <div className="relative w-full min-w-[380px] h-[280px] md:min-w-0 md:h-full origin-top-left scale-[0.38] sm:scale-[0.8] md:scale-[0.85] lg:scale-100 flex flex-col justify-between max-w-[400px] translate-x-5 md:translate-x-0 -translate-y-1 ">
             
             {/* Vertical Dashed Line */}
             <div className="absolute left-[62px] top-[28px] bottom-[24px] border-l-[2px] border-dashed border-[#FFFFFF]/25 z-0"></div>

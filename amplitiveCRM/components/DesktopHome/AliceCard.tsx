@@ -36,7 +36,7 @@ export default function AliceCard() {
         className="absolute top-[35px] left-[35px] w-16 h-16 rounded-[14px] bg-[#FFEAF3] flex items-center justify-center shadow-[0_0_20px_rgba(255,107,107,0.15)] z-20 border border-white/10"
         style={{
           boxShadow:
-            "0 0 0 10px rgba(255, 255, 255, 0.08), 0 10px 20px rgba(0, 0, 0, 0.2)",
+            "0 0 0 10px rgba(255, 255, 255, 0.8), 0 10px 20px rgba(0, 0, 0, 0.2)",
         }}
       >
         <svg
@@ -363,14 +363,14 @@ export default function AliceCard() {
 
       {/* Main CRM Card Container */}
 
-      <div className="absolute top-[80px] shadow-[0_0_30px_rgba(255,255,255,0.25)] left-[140px] w-[540px] h-[340px] z-20 rounded-[20px] border-none">
+      <div className="absolute top-[80px] shadow-[inset_0_2px_4px_rgba(255,255,255,0.1),inset_0_-2px_4px_rgba(0,0,0,0.4),inset_4px_4px_36px_rgba(117,186,255,0.12),inset_4px_4px_36px_rgba(91,236,113,0.05)] backdrop-blur-md left-[140px] w-[540px] h-[340px] z-20 rounded-[20px] border-none">
         {/* Inner Card (Dark background + User SVG + Content) */}
         <div className="relative w-full h-full rounded-[20px] bg-[#0A1325] border border-white/5 p-8 flex flex-col justify-between overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)]">
           {/* User Provided SVG Background */}
           <svg
             width="100%"
             height="100%"
-            viewBox="0 0 316 205"
+            viewBox="0 0 376 175"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
             preserveAspectRatio="none"
