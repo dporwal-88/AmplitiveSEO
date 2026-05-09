@@ -1,7 +1,7 @@
 "use client";
 
-import React from "react";
-import { Montserrat_Alternates, Montserrat,Urbanist } from 'next/font/google';
+import React, { useState } from "react";
+import { Montserrat_Alternates, Montserrat, Urbanist } from 'next/font/google';
 
 // Configure the font
 const montserratAlt = Montserrat_Alternates({
@@ -15,11 +15,11 @@ const montserrat = Montserrat({
 const urbanist = Urbanist({ 
   subsets: ['latin'],
   display: 'swap',
-  // Optional: define a custom CSS variable if you want to use it alongside other fonts
   variable: '--font-urbanist', 
 });
 
 export default function Features() {
+  // Removed state from here, as it belongs in MainCalendarCard where it's used
   return (
     <div
       className={`relative w-full min-h-[100dvh] bg-[#01091E] text-white overflow-hidden ${montserrat.className}`}
@@ -95,98 +95,116 @@ const SearchWidget = () => (
   </div>
 );
 
-const MainCalendarCard = () => (
-  <div className="relative md:absolute md:top-[60px] md:left-[230px] z-10 rounded-[18px] md:rounded-[20px] border-none w-[full] h-[240px] md:w-[410px] md:h-[330px] shadow-[0_0_30px_rgba(255,255,255,0.25)] md:shadow-[inset_0_2px_4px_rgba(255,255,255,0.1),inset_0_-2px_4px_rgba(0,0,0,0.4),inset_4px_4px_36px_rgba(117,186,255,0.12),inset_4px_4px_36px_rgba(91,236,113,0.05)] md:backdrop-blur-md scale-[0.6] md:scale-[1]">
-    <div className="relative w-full h-full rounded-[18px] md:rounded-[20px] bg-[#0A1325] border border-white/5 p-4 sm:p-5 md:p-8 flex flex-col justify-between overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)]">
-      
-      {/* Background SVG Mobile */}
-      <svg className="absolute top-0 left-0 z-0 opacity-90 pointer-events-none md:hidden" width="90%" height="62%" viewBox="0 0 316 205" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-        <g opacity="0.6" filter="url(#filter0_f_303_14574_mob)">
-          <path d="M221.555 -50.7261C221.555 38.4702 149.247 110.778 60.051 110.778C-29.1452 110.778 -101.453 38.4702 -101.453 -50.7261C-101.453 -139.922 -29.1452 -212.23 60.051 -212.23C149.247 -212.23 221.555 -139.922 221.555 -50.7261Z" fill="url(#paint0_radial_303_14574_mob)" />
-        </g>
-        <defs>
-          <filter id="filter0_f_303_14574_mob" x="-194.955" y="-305.733" width="610.013" height="510.013" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
-            <feFlood floodOpacity="0" result="BackgroundImageFix" />
-            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
-            <feGaussianBlur stdDeviation="46.7512" result="effect1_foregroundBlur_303_14574_mob" />
-          </filter>
-          <radialGradient id="paint0_radial_303_14574_mob" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(60.2048 -56.8416) rotate(90) scale(172.623 160.411)">
-            <stop stopColor="#5BEC71" />
-            <stop offset="1" stopColor="#0F72D7" />
-          </radialGradient>
-        </defs>
-      </svg>
+// Changed to explicit return () => { return (...) } so we can use hooks inside
+const MainCalendarCard = () => {
+  // State moved inside the component that actually uses it
+  const [activeTab, setActiveTab] = useState("Weekly");
+  const tabs = ["Weekly", "Daily", "Monthly"];
 
-      {/* Background SVG Desktop */}
-      <svg className="absolute top-0 left-0 z-0 opacity-90 pointer-events-none hidden md:block" width="100%" height="100%" viewBox="0 0 376 175" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-        <g opacity="0.6" filter="url(#filter0_f_303_14574)">
-          <path d="M221.555 -50.7261C221.555 38.4702 149.247 110.778 60.051 110.778C-29.1452 110.778 -101.453 38.4702 -101.453 -50.7261C-101.453 -139.922 -29.1452 -212.23 60.051 -212.23C149.247 -212.23 221.555 -139.922 221.555 -50.7261Z" fill="url(#paint0_radial_303_14574)" />
-        </g>
-        <defs>
-          <filter id="filter0_f_303_14574" x="-194.955" y="-305.733" width="510.013" height="510.013" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
-            <feFlood floodOpacity="0" result="BackgroundImageFix" />
-            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
-            <feGaussianBlur stdDeviation="46.7512" result="effect1_foregroundBlur_303_14574" />
-          </filter>
-          <radialGradient id="paint0_radial_303_14574" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(60.2048 -56.8416) rotate(90) scale(172.623 160.411)">
-            <stop stopColor="#5BEC71" />
-            <stop offset="1" stopColor="#0F72D7" />
-          </radialGradient>
-        </defs>
-      </svg>
+  return (
+    <div className="relative md:absolute md:top-[60px] md:left-[230px] z-10 rounded-[18px] md:rounded-[20px] border-none w-[full] h-[240px] md:w-[410px] md:h-[330px] shadow-[0_0_30px_rgba(255,255,255,0.25)] md:shadow-[inset_0_2px_4px_rgba(255,255,255,0.1),inset_0_-2px_4px_rgba(0,0,0,0.4),inset_4px_4px_36px_rgba(117,186,255,0.12),inset_4px_4px_36px_rgba(91,236,113,0.05)] md:backdrop-blur-md scale-[0.6] md:scale-[1]">
+      <div className="relative w-full h-full rounded-[18px] md:rounded-[20px] bg-[#0A1325] border border-white/5 p-4 sm:p-5 md:p-8 flex flex-col justify-between overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)]">
+        
+        {/* Background SVG Mobile */}
+        <svg className="absolute top-0 left-0 z-0 opacity-90 pointer-events-none md:hidden" width="90%" height="62%" viewBox="0 0 316 205" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+          <g opacity="0.6" filter="url(#filter0_f_303_14574_mob)">
+            <path d="M221.555 -50.7261C221.555 38.4702 149.247 110.778 60.051 110.778C-29.1452 110.778 -101.453 38.4702 -101.453 -50.7261C-101.453 -139.922 -29.1452 -212.23 60.051 -212.23C149.247 -212.23 221.555 -139.922 221.555 -50.7261Z" fill="url(#paint0_radial_303_14574_mob)" />
+          </g>
+          <defs>
+            <filter id="filter0_f_303_14574_mob" x="-194.955" y="-305.733" width="610.013" height="510.013" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+              <feFlood floodOpacity="0" result="BackgroundImageFix" />
+              <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+              <feGaussianBlur stdDeviation="46.7512" result="effect1_foregroundBlur_303_14574_mob" />
+            </filter>
+            <radialGradient id="paint0_radial_303_14574_mob" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(60.2048 -56.8416) rotate(90) scale(172.623 160.411)">
+              <stop stopColor="#5BEC71" />
+              <stop offset="1" stopColor="#0F72D7" />
+            </radialGradient>
+          </defs>
+        </svg>
 
-      {/* Calendar Content */}
-      <div className="relative z-10 flex flex-col h-full">
-        {/* Navbar */}
-        <div className="flex items-center justify-between bg-white/5 rounded-[10px] p-1 mb-3 md:mb-3 border border-white/5">
-          <div className="bg-white text-[#01091E] text-[10px] md:text-[16px] py-[6px] md:py-[7.5px] px-4 md:px-6 rounded-md shadow-sm cursor-pointer">Weekly</div>
-          <div className="text-white/60 text-[10px] md:text-[16px] font-medium py-[6px] md:py-[7.5px] px-4 md:px-6 cursor-pointer hover:text-white/90 transition-colors">Daily</div>
-          <div className="text-white/60 text-[10px] md:text-[16px] font-medium py-[6px] md:py-[7.5px] px-4 md:px-6 cursor-pointer hover:text-white/90 transition-colors">Monthly</div>
-        </div>
+        {/* Background SVG Desktop */}
+        <svg className="absolute top-0 left-0 z-0 opacity-90 pointer-events-none hidden md:block" width="100%" height="100%" viewBox="0 0 376 175" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+          <g opacity="0.6" filter="url(#filter0_f_303_14574)">
+            <path d="M221.555 -50.7261C221.555 38.4702 149.247 110.778 60.051 110.778C-29.1452 110.778 -101.453 38.4702 -101.453 -50.7261C-101.453 -139.922 -29.1452 -212.23 60.051 -212.23C149.247 -212.23 221.555 -139.922 221.555 -50.7261Z" fill="url(#paint0_radial_303_14574)" />
+          </g>
+          <defs>
+            <filter id="filter0_f_303_14574" x="-194.955" y="-305.733" width="510.013" height="510.013" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+              <feFlood floodOpacity="0" result="BackgroundImageFix" />
+              <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+              <feGaussianBlur stdDeviation="46.7512" result="effect1_foregroundBlur_303_14574" />
+            </filter>
+            <radialGradient id="paint0_radial_303_14574" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(60.2048 -56.8416) rotate(90) scale(172.623 160.411)">
+              <stop stopColor="#5BEC71" />
+              <stop offset="1" stopColor="#0F72D7" />
+            </radialGradient>
+          </defs>
+        </svg>
 
-        {/* Month Title */}
-        <h3 className="text-white font-medium text-[20px] md:text-[38px] text-center mb-2 md:mb-3 tracking-wide">
-          May 23
-        </h3>
-
-        {/* Calendar Grid */}
-        <div className="grid grid-cols-6 gap-y-4 md:gap-y-3 text-center flex-1 content-center">
-          {/* Days Header */}
-          {['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'].map(d => (
-            <div key={d} className="text-[11px] md:text-[14px] text-white/80 font-medium tracking-wider">{d}</div>
-          ))}
-          
-          {/* Dates - Row 1 */}
-          <div className="text-[10px] md:text-[14px] text-white bg-white/25 p-1 md:p-2 ">12</div>
-          <div className="text-[10px] md:text-[14px] text-white bg-white/25 p-1 md:p-2 ">13</div>
-          <div className="text-[10px] md:text-[14px] text-white bg-white/25 p-1 md:p-2  relative">
-            <div className="absolute inset-0 bg-white/25 bg-gradient-to-l from-[#FFA9CF] to-[#C62943] rounded-full w-[22px] h-[22px] md:w-[26px] md:h-[26px] left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 -z-10 shadow-[0_0_15px_rgba(255,107,107,0.5)]"></div>
-            14
+        {/* Calendar Content */}
+        <div className="relative z-10 flex flex-col h-full">
+          {/* Navbar */}
+          {/* Interactive Timeframe Navbar */}
+          <div className="flex items-center justify-between bg-white/5 rounded-[10px] p-1 mb-3 md:mb-3 border border-white/5 relative">
+            {tabs.map((tab) => (
+              <div
+                key={tab}
+                onClick={() => setActiveTab(tab)}
+                className={`text-[10px] md:text-[16px] py-[6px] md:py-[7.5px] px-4 md:px-6 rounded-md cursor-pointer transition-all duration-300 ease-in-out font-medium ${
+                  activeTab === tab
+                    ? "bg-white text-[#01091E] shadow-sm"
+                    : "text-white/60 hover:text-white/90"
+                }`}
+              >
+                {tab}
+              </div>
+            ))}
           </div>
-          <div className="text-[10px] md:text-[14px] text-white bg-white/25 p-1 md:p-2 ">15</div>
-          <div className="text-[10px] md:text-[14px] text-white bg-white/25 p-1 md:p-2 ">16</div>
-          <div className="text-[10px] md:text-[14px] text-white bg-white/25 p-1 md:p-2 ">17</div>
-          
-          {/* Dates - Row 2 */}
-          <div className="text-[10px] md:text-[14px] text-white ">18</div>
-          <div className="text-[10px] md:text-[14px] text-white ">19</div>
-          <div className="text-[10px] md:text-[14px] text-white ">20</div>
-          <div className="text-[10px] md:text-[14px] text-white ">21</div>
-          <div className="text-[10px] md:text-[14px] text-white ">22</div>
-          <div className="text-[10px] md:text-[14px] text-white ">23</div>
 
-          {/* Dates - Row 3 */}
-          <div className="text-[10px] md:text-[14px] text-white ">24</div>
-          <div className="text-[10px] md:text-[14px] text-white ">25</div>
-          <div className="text-[10px] md:text-[14px] text-white ">26</div>
-          <div className="text-[10px] md:text-[14px] text-white ">27</div>
-          <div className="text-[10px] md:text-[14px] text-white ">28</div>
-          <div className="text-[10px] md:text-[14px] text-white ">29</div>
+          {/* Month Title */}
+          <h3 className="text-white font-medium text-[20px] md:text-[38px] text-center mb-2 md:mb-3 tracking-wide">
+            May 23
+          </h3>
+
+          {/* Calendar Grid */}
+          <div className="grid grid-cols-6 gap-y-4 md:gap-y-3 text-center flex-1 content-center">
+            {/* Days Header */}
+            {['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'].map(d => (
+              <div key={d} className="text-[11px] md:text-[14px] text-white/80 font-medium tracking-wider">{d}</div>
+            ))}
+            
+            {/* Dates - Row 1 */}
+            <div className="text-[10px] md:text-[14px] text-white bg-white/25 p-1 md:p-2 ">12</div>
+            <div className="text-[10px] md:text-[14px] text-white bg-white/25 p-1 md:p-2 ">13</div>
+            <div className="text-[10px] md:text-[14px] text-white bg-white/25 p-1 md:p-2  relative">
+              <div className="absolute inset-0 bg-white/25 bg-gradient-to-l from-[#FFA9CF] to-[#C62943] rounded-full w-[22px] h-[22px] md:w-[26px] md:h-[26px] left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 -z-10 shadow-[0_0_15px_rgba(255,107,107,0.5)]"></div>
+              14
+            </div>
+            <div className="text-[10px] md:text-[14px] text-white bg-white/25 p-1 md:p-2 ">15</div>
+            <div className="text-[10px] md:text-[14px] text-white bg-white/25 p-1 md:p-2 ">16</div>
+            <div className="text-[10px] md:text-[14px] text-white bg-white/25 p-1 md:p-2 ">17</div>
+            
+            {/* Dates - Row 2 */}
+            <div className="text-[10px] md:text-[14px] text-white ">18</div>
+            <div className="text-[10px] md:text-[14px] text-white ">19</div>
+            <div className="text-[10px] md:text-[14px] text-white ">20</div>
+            <div className="text-[10px] md:text-[14px] text-white ">21</div>
+            <div className="text-[10px] md:text-[14px] text-white ">22</div>
+            <div className="text-[10px] md:text-[14px] text-white ">23</div>
+
+            {/* Dates - Row 3 */}
+            <div className="text-[10px] md:text-[14px] text-white ">24</div>
+            <div className="text-[10px] md:text-[14px] text-white ">25</div>
+            <div className="text-[10px] md:text-[14px] text-white ">26</div>
+            <div className="text-[10px] md:text-[14px] text-white ">27</div>
+            <div className="text-[10px] md:text-[14px] text-white ">28</div>
+            <div className="text-[10px] md:text-[14px] text-white ">29</div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-);
+  );
+};
 
 const LinkedInPostWidget = () => (
   <div 

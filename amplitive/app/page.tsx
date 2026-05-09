@@ -12,8 +12,8 @@ export default function Home() {
   return (
     <div>
       
-      <FeaturesCRM/>
-      <CardsCRM/>
+      {/* <FeaturesCRM/>
+      <CardsCRM/> */}
 
       {/* <FeaturesSEO/>
       <CardsSEO/> */}
@@ -21,8 +21,8 @@ export default function Home() {
       {/* <FeaturesWorkFlow/>
       <CardsWorkFlow/> */}
 
-      {/* <FeaturesCalendar/>
-      <CardsCalendar/> */}
+      <FeaturesCalendar/>
+      <CardsCalendar/>
 
 
     </div>
