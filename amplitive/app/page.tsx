@@ -6,6 +6,8 @@ import FeaturesWorkFlow from "@/WorkflowAutomation/Features";
 import CardsWorkFlow from "@/WorkflowAutomation/Cards"
 import FeaturesCalendar from "@/calendar/Features";
 import CardsCalendar from "@/calendar/Cards"
+import FeaturesLinkedin from "@/LinkedIn/Features"
+import CardsLinkedin from "@/LinkedIn/Cards"
 
 
 export default function Home() {
@@ -21,8 +23,11 @@ export default function Home() {
       {/* <FeaturesWorkFlow/>
       <CardsWorkFlow/> */}
 
-      <FeaturesCalendar/>
-      <CardsCalendar/>
+      {/* <FeaturesCalendar/>
+      <CardsCalendar/> */}
+
+      <FeaturesLinkedin/>
+      <CardsLinkedin/>
 
 
     </div>
