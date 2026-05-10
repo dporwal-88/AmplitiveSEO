@@ -8,6 +8,8 @@ import FeaturesCalendar from "@/calendar/Features";
 import CardsCalendar from "@/calendar/Cards"
 import FeaturesLinkedin from "@/LinkedIn/Features"
 import CardsLinkedin from "@/LinkedIn/Cards"
+import FeaturesAds from "@/ads/Features"
+import CardsAds from "@/ads/Cards"
 
 
 export default function Home() {
@@ -26,8 +28,11 @@ export default function Home() {
       {/* <FeaturesCalendar/>
       <CardsCalendar/> */}
 
-      <FeaturesLinkedin/>
-      <CardsLinkedin/>
+      {/* <FeaturesLinkedin/>
+      <CardsLinkedin/> */}
+
+      <FeaturesAds/>
+      <CardsAds/>
 
 
     </div>

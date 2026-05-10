@@ -30,7 +30,7 @@ export default function Cards() {
           SECTION 3 — FEATURE CARDS
       ══════════════════════════════════════════════ */}
       <div className="relative z-10 max-w-[1400px] mx-auto py-4 lg:py-12 px-4 lg:px-20">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
           {/* ── CARD 1: Projects ── */}
           <FeatureCard className="h-[220px] sm:h-[380px] md:h-[350px] lg:h-[400px]">
             <CardBackgrounds index={1} />
