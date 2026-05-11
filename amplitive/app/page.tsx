@@ -22,8 +22,8 @@ export default function Home() {
       {/* <FeaturesSEO/>
       <CardsSEO/> */}
 
-      {/* <FeaturesWorkFlow/>
-      <CardsWorkFlow/> */}
+      <FeaturesWorkFlow/>
+      <CardsWorkFlow/>
 
       {/* <FeaturesCalendar/>
       <CardsCalendar/> */}
@@ -31,8 +31,8 @@ export default function Home() {
       {/* <FeaturesLinkedin/>
       <CardsLinkedin/> */}
 
-      <FeaturesAds/>
-      <CardsAds/>
+      {/* <FeaturesAds/>
+      <CardsAds/> */}
 
 
     </div>
