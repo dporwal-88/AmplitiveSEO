@@ -41,7 +41,7 @@ export default function Features() {
                 AI workflows.
               </span>
             </h1>
-            <p className="text-[13.5px] md:text-[16px] font-light text-[#FFFFFF] leading-[1.25] md:leading-[1.7] w-[310px] md:w-[480px] mx-auto md:mx-0 mb-7 md:mb-8">
+            <div className="text-[13.5px] md:text-[16px] font-light text-[#FFFFFF] leading-[1.25] md:leading-[1.7] w-[310px] md:w-[480px] mx-auto md:mx-0 mb-7 md:mb-8">
               <div className="hidden md:block">
               AI automates tasks, handoffs, and workflows—so your operations run
               consistently as you scale.
@@ -49,7 +49,7 @@ export default function Features() {
               <div className="block md:hidden">
               Amplitive helps teams automate routine tasks, handoffs, and operational steps so execution scales with less manual effort.
               </div>
-            </p>
+            </div>
             
             <div className="flex flex-col-reverse md:flex-row items-center gap-3 md:gap-4 justify-center md:justify-start">
               <button className="px-8.5 md:px-6 py-2 md:py-2.5 rounded-[6px] md:rounded-lg text-[10.1px] md:text-[13px] font-medium text-white/90 bg-[#FFFFFF1F] md:bg-[#1e2e46] backdrop-blur-[32px] md:backdrop-blur-none hover:bg-[#2a4060] transition-all shadow-sm scale-[1.1] md:scale-100 cursor-pointer">
@@ -203,7 +203,7 @@ export default function Features() {
                   
                   {/* Icon */}
                   <div className="flex items-center justify-center shrink-0">
-                    <svg width="26" height="26" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg width="30" height="30" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M5.75391 5.75443L15.9249 30.2108L19.5358 19.5795L30.2103 15.9254L5.75391 5.75443Z" stroke="white" strokeWidth="2.87722" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
                   </div>
