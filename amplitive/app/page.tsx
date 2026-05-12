@@ -10,6 +10,8 @@ import FeaturesLinkedin from "@/LinkedIn/Features"
 import CardsLinkedin from "@/LinkedIn/Cards"
 import FeaturesAds from "@/ads/Features"
 import CardsAds from "@/ads/Cards"
+import HeroSection from "@/DriveCollaboration/HeroSection"
+import CardsDrive from "@/DriveCollaboration/Cards"
 
 
 export default function Home() {
@@ -22,8 +24,8 @@ export default function Home() {
       {/* <FeaturesSEO/>
       <CardsSEO/> */}
 
-      <FeaturesWorkFlow/>
-      <CardsWorkFlow/>
+      {/* <FeaturesWorkFlow/>
+      <CardsWorkFlow/> */}
 
       {/* <FeaturesCalendar/>
       <CardsCalendar/> */}
@@ -34,6 +36,8 @@ export default function Home() {
       {/* <FeaturesAds/>
       <CardsAds/> */}
 
+      <HeroSection/>
+      <CardsDrive/>
 
     </div>
   );
