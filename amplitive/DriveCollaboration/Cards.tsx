@@ -178,7 +178,7 @@ export default function Cards() {
                   <div className="relative w-full h-full">
                     
                     {/* Left: Workspace panel */}
-                    <div className="absolute h-[320px] scale-[1.1] md:scale-[1]  left-0 top-[-25px] w-[43%] bg-white rounded-[10px] overflow-hidden shadow-[0_0_0_5px_rgba(255,255,255,0.18),0_5px_10px_rgba(0,0,0,0.2)] pb-2">
+                    <div className="absolute h-[320px] scale-[1.1] sm:scale-[1] md:scale-[1] lg:scale-[1] left-0 top-[-25px] w-[43%] bg-white rounded-[10px] overflow-hidden shadow-[0_0_0_5px_rgba(255,255,255,0.18),0_5px_10px_rgba(0,0,0,0.2)] pb-2">
                       <div className="flex items-center justify-between px-3 py-3">
                         <div className="flex items-center gap-2">
                           <div className="w-[24px] h-[24px] rounded-[8px] bg-[#FF6B35] flex items-center justify-center text-white text-[11px] font-bold flex-shrink-0">SD</div>
