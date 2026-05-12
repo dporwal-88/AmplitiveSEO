@@ -33,7 +33,7 @@ export default function Features() {
       <div className="relative z-10 flex flex-col items-center text-center px-5 pt-14 md:flex-row md:justify-center md:h-screen md:px-0 md:pt-0  ">
         
         {/* Scaling Wrapper */}
-        <div className="w-full flex flex-col items-center md:relative md:min-w-[1485px] md:min-h-[600px] md:flex-row md:items-center md:justify-between md:scale-[0.5] lg:scale-[0.65] xl:scale-[0.8] 2xl:scale-100 md:origin-center md:z-10 md:transition-transform md:duration-300 ">
+        <div className="w-full flex flex-col items-center md:relative md:w-[1485px] md:min-h-[600px] md:flex-row md:items-center md:justify-between md:scale-[0.5] lg:scale-[0.65] xl:scale-[0.8] 2xl:scale-100 md:origin-center md:z-10 md:transition-transform md:duration-300 ">
           
           {/* ── 1. Text & CTA Section ── */}
           <div className="w-[95%] md:w-[650px] md:h-[411px] md:flex-shrink-0 md:flex md:flex-col mb-4 md:mb-0 md:justify-center md:pl-4 md:-translate-y-[20px] md:translate-x-[50px] md:text-left">
