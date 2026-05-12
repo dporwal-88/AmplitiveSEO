@@ -81,7 +81,7 @@ export default function Features() {
           UNIFIED HERO CONTENT (Merged layout)
       ══════════════════════════════════════════════ */}
       <div className="relative z-10 flex flex-col md:flex-row items-center justify-center w-full px-5 md:px-0 pt-14 md:pt-0 mx-auto md:mx-0 max-w-[480px] md:max-w-none md:h-[650px] lg:h-screen mt-0 md:mt-10 lg:mt-0">
-        <div className="relative flex flex-col md:flex-row items-center w-full md:w-auto md:min-w-[1485px] md:min-h-[600px] md:justify-between md:scale-[0.5] lg:scale-[0.65] xl:scale-[0.8] 2xl:scale-100 origin-center z-10">
+        <div className="relative flex flex-col md:flex-row items-center w-full md:w-auto md:w-[1485px] md:min-h-[600px] md:justify-between md:scale-[0.5] lg:scale-[0.65] xl:scale-[0.8] 2xl:scale-100 origin-center z-10">
           
           {/* ── Left Text Content ── */}
           <div className="flex flex-col flex-shrink-0 w-[92%] md:w-[650px] md:h-[411px] items-center md:items-start text-center md:text-left justify-center mb-22 md:mb-0 md:pl-4 md:-translate-y-[20px]">
